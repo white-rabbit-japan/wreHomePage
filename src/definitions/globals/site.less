@@ -28,6 +28,7 @@
 html,
 body {
   height: 100%;
+  margin:0;
 }
 
 html {
@@ -160,5 +161,54 @@ input::selection {
   color: @inputHighlightColor;
 }
 
+/* Contextual Backgrounds */
+.background-green{
+    background-color:@green;
+}
+.background-blue{
+    background-color:@blue;
+}
+.background-grey{
+    background-color:@grey;
+}
+
+/* Contextual Colors */
+.text-green{
+    color:@green!important;
+}
+.text-blue{
+    color:@blue!important;
+}
+.text-grey{
+    color:@grey!important;
+}
+.text-white{
+    color:@white!important;
+}
+
+.text-huge{
+    font-size:@textSizeHuge;
+}
+.text-large{
+    font-size:@textSizeLarge;
+}
+.text-medium{
+    font-size:@textSizeMedium;
+}
+
+.map-background{
+    background:url(../img/Map.png) no-repeat center center;
+    min-height:304px;
+}
+.map-background h1{
+    font-size:32pt;
+    margin-top:85px;
+}
+/* Footer */
+.footer-menu{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
 
 .loadUIOverrides();

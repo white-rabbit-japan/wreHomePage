@@ -18,6 +18,7 @@
 html,
 body {
   height: 100%;
+  margin: 0;
 }
 html {
   font-size: 14px;
@@ -146,6 +147,55 @@ textarea::selection,
 input::selection {
   background-color: rgba(100, 100, 100, 0.4);
   color: rgba(0, 0, 0, 0.87);
+}
+
+/* Contextual Backgrounds */
+.background-green {
+  background-color: #4bc251;
+}
+.background-blue {
+  background-color: #253c44;
+}
+.background-grey {
+  background-color: #edeff1;
+}
+
+/* Contextual Colors */
+.text-green {
+  color: #4bc251 !important;
+}
+.text-blue {
+  color: #253c44 !important;
+}
+.text-grey {
+  color: #edeff1 !important;
+}
+.text-white {
+  color: #ffffff !important;
+}
+.text-huge {
+  font-size: 6em;
+}
+.text-large {
+  font-size: 4em;
+}
+.text-medium {
+  font-size: 2em;
+}
+.map-background {
+  background: url(../img/Map.png) no-repeat center center;
+  min-height: 304px;
+}
+.map-background h1 {
+  font-size: 32pt;
+  margin-top: 85px;
+}
+
+/* Footer */
+.footer-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 

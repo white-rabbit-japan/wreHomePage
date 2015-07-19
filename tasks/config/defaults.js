@@ -59,9 +59,11 @@ module.exports = {
     'label',
     'list',
     'loader',
+    'logos',
     'rail',
     'reveal',
     'segment',
+    'section',
     'step',
 
     // collections

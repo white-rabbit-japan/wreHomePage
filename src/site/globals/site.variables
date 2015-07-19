@@ -3,3 +3,11 @@
 *******************************/
 
 @primaryColor   : #7CC05A;
+@green			: #4bc251;
+@blue			: #253c44;
+@grey			: #edeff1;
+@white			: #fff;
+
+@textSizeHuge: 6em;
+@textSizeLarge: 4em;
+@textSizeMedium: 2em;
