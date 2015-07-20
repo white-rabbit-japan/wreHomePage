@@ -16,14 +16,14 @@
 
 /* Button defaults to using same height as input globally */
 @verticalPadding: @inputVerticalPadding;
-@horizontalPadding: 1.5em;
+@horizontalPadding: 2.2em;
 
 
 /* Text */
 @textTransform: none;
 @tapColor: transparent;
-@fontFamily: @pageFont;
-@fontWeight: bold;
+@fontFamily: @headerFont;
+@fontWeight: normal;
 @textColor: rgba(0, 0, 0, 0.6);
 @textShadow: none;
 @invertedTextShadow: none;

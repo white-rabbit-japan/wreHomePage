@@ -530,7 +530,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #ffffff;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.4285em;
   color: rgba(0, 0, 0, 0.87);
@@ -546,7 +546,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.2857em;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   font-weight: bold;
@@ -694,17 +694,34 @@ input::selection {
   color: #ffffff !important;
 }
 
+/* Contextual Sizes */
+
 .text-huge {
   font-size: 6em;
+  line-height: initial;
 }
 
 .text-large {
   font-size: 4em;
+  line-height: initial;
 }
 
 .text-medium {
   font-size: 2em;
+  line-height: initial;
 }
+
+/* Contextual Font Weights */
+
+.text-heavy {
+  font-weight: 600;
+}
+
+.text-light {
+  font-weight: 200;
+}
+
+/* Misc */
 
 .map-background {
   background: url("../img/Map.png") no-repeat center center;
@@ -716,12 +733,40 @@ input::selection {
   margin-top: 85px;
 }
 
+blockquote {
+  font-weight: 300;
+}
+
+/* Logo */
+
+.logo img {
+  max-height: 40px;
+}
+
+/* Screens */
+
+.screen img {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Mobile Menu */
+
+#mobile-menu .item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* Footer */
 
 .footer-menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.footer-menu a {
+  color: #ffffff;
 }
 
 /*******************************
@@ -755,17 +800,16 @@ input::selection {
   vertical-align: baseline;
   background: #e0e1e2 none;
   color: rgba(0, 0, 0, 0.6);
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0em 0.25em 0em 0em;
-  padding: 0.78571429em 1.5em 0.78571429em;
+  padding: 0.78571429em 2.2em 0.78571429em;
   text-transform: none;
   text-shadow: none;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1em;
   font-style: normal;
   text-align: center;
   text-decoration: none;
-  border-radius: 0.28571429rem;
   box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -974,7 +1018,7 @@ input::selection {
 
 .ui.animated.button .visible.content {
   position: relative;
-  margin-right: 1.5em;
+  margin-right: 2.2em;
 }
 
 .ui.animated.button .hidden.content {
@@ -1359,7 +1403,7 @@ input::selection {
 
 .ui.compact.buttons .button,
 .ui.compact.button {
-  padding: 0.58928571em 1.125em 0.58928571em;
+  padding: 0.58928571em 1.65em 0.58928571em;
 }
 
 .ui.compact.icon.buttons .button,
@@ -1369,7 +1413,7 @@ input::selection {
 
 .ui.compact.labeled.icon.buttons .button,
 .ui.compact.labeled.icon.button {
-  padding: 0.58928571em 3.69642857em 0.58928571em;
+  padding: 0.58928571em 4.22142857em 0.58928571em;
 }
 
 /*-------------------
@@ -1582,8 +1626,8 @@ input::selection {
 .ui.labeled.icon.buttons .button,
 .ui.labeled.icon.button {
   position: relative;
-  padding-left: 4.07142857em !important;
-  padding-right: 1.5em !important;
+  padding-left: 4.77142857em !important;
+  padding-right: 2.2em !important;
 }
 
 /* Left Labeled */
@@ -1612,8 +1656,8 @@ input::selection {
 /* Right Labeled */
 
 .ui[class*="right labeled"].icon.button {
-  padding-right: 4.07142857em !important;
-  padding-left: 1.5em !important;
+  padding-right: 4.77142857em !important;
+  padding-left: 2.2em !important;
 }
 
 .ui[class*="right labeled"].icon.button > .icon {
@@ -1663,8 +1707,8 @@ input::selection {
 
 .ui.fluid[class*="left labeled"].icon.button,
 .ui.fluid[class*="right labeled"].icon.button {
-  padding-left: 1.5em !important;
-  padding-right: 1.5em !important;
+  padding-left: 2.2em !important;
+  padding-right: 2.2em !important;
 }
 
 /*--------------
@@ -4672,7 +4716,7 @@ input::selection {
 /* Text Container */
 
 .ui.text.container {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   max-width: 700px !important;
   line-height: 1.5;
 }
@@ -6269,7 +6313,7 @@ i.flag.zimbabwe:before {
   border: none;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   padding: 0em 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   line-height: 1.2857em;
   text-transform: none;
@@ -10753,7 +10797,7 @@ img.ui.bordered.image {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   text-align: left;
   line-height: 1.2142em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding: 0.67861429em 1em;
   background: #ffffff;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -12652,7 +12696,7 @@ ol.ui.list ol li,
 .ui.list > .item .header {
   display: block;
   margin: 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -13836,18 +13880,78 @@ ol.ui.horizontal.list li:before,
 *******************************/
 
 .shipping-logo {
-  max-height: 50px;
-  margin: 15px;
+  margin: 5px;
+  vertical-align: middle;
+}
+
+.fedex-logo {
+  max-height: 49px;
+}
+
+.jppost-logo {
+  max-height: 70px;
+}
+
+.ems-logo {
+  max-height: 54px;
 }
 
 .payment-logo {
-  max-height: 50px;
   margin: 15px;
+  vertical-align: middle;
+}
+
+.paypal-logo {
+  max-height: 77px;
+}
+
+.visa-logo {
+  max-height: 29px;
+}
+
+.mastercard-logo {
+  max-height: 51px;
+}
+
+.discover-logo {
+  max-height: 83px;
+}
+
+.amex-logo {
+  max-height: 58px;
+}
+
+.stripe-logo {
+  max-height: 35px;
+}
+
+.verisign-logo {
+  max-height: 50px;
 }
 
 .as-seen-logo {
-  max-height: 30px;
   margin: 15px;
+  vertical-align: middle;
+}
+
+.mashable-logo {
+  max-height: 26px;
+}
+
+.gizmodo-logo {
+  max-height: 25px;
+}
+
+.pandodaily-logo {
+  max-height: 28px;
+}
+
+.techcrunch-logo {
+  max-height: 20px;
+}
+
+.venture-beat-logo {
+  max-height: 17px;
 }
 /*!
  * # Semantic UI x.x - Rail
@@ -15309,7 +15413,7 @@ ol.ui.horizontal.list li:before,
 /* Title */
 
 .ui.steps .step .title {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.14285714em;
   font-weight: bold;
 }
@@ -16073,7 +16177,7 @@ ol.ui.horizontal.list li:before,
 .ui.form input[type="time"],
 .ui.form input[type="text"],
 .ui.form input[type="url"] {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0em;
   outline: none;
   -webkit-appearance: none;
@@ -19214,7 +19318,7 @@ ol.ui.horizontal.list li:before,
   display: -ms-flexbox;
   display: flex;
   margin: 1rem 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: #ffffff;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -21350,7 +21454,7 @@ Floated Menu / Item
 
 .ui.message .header {
   display: block;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin: -0.14285em 0em 0rem 0em;
 }
@@ -23518,7 +23622,7 @@ Floated Menu / Item
 .ui.card > .content > .header {
   display: block;
   margin: '';
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgba(0, 0, 0, 0.85);
 }
 
@@ -25136,7 +25240,7 @@ a.ui.card:hover,
 .ui.items > .item > .content > .header {
   display: inline-block;
   margin: -0.21425em 0em 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.85);
 }
@@ -25618,7 +25722,7 @@ a.ui.card:hover,
 
 .ui.statistics .statistic > .value,
 .ui.statistic > .value {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 4rem;
   font-weight: normal;
   line-height: 1em;
@@ -25633,7 +25737,7 @@ a.ui.card:hover,
 
 .ui.statistics .statistic > .label,
 .ui.statistic > .label {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
@@ -26187,7 +26291,7 @@ a.ui.card:hover,
 
 .ui.accordion .title:not(.ui) {
   padding: 0.5em 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   color: rgba(0, 0, 0, 0.87);
 }
@@ -29043,7 +29147,7 @@ select.ui.dropdown {
 
 .ui.modal > .header {
   display: block;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background: #ffffff;
   margin: 0em;
   padding: 1.25rem 1.5rem;
@@ -29708,7 +29812,7 @@ a.ui.nag {
 
 .ui.popup > .header {
   padding: 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.125em;
   line-height: 1.2;
   font-weight: bold;
@@ -31030,7 +31134,7 @@ a.ui.nag {
 
 .ui.search > .results .result .title {
   margin: -0.14285em 0em 0em;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 1em;
   color: rgba(0, 0, 0, 0.85);
@@ -31056,7 +31160,7 @@ a.ui.nag {
 }
 
 .ui.search > .results > .message .header {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   font-weight: bold;
   color: rgba(0, 0, 0, 0.87);
@@ -31229,7 +31333,7 @@ a.ui.nag {
 .ui.category.search > .results .category > .name {
   width: 100px;
   background: transparent;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   float: 1em;
   float: left;

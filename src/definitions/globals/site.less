@@ -28,7 +28,7 @@
 html,
 body {
   height: 100%;
-  margin:0;
+  margin:0;  
 }
 
 html {
@@ -186,16 +186,29 @@ input::selection {
     color:@white!important;
 }
 
+/* Contextual Sizes */
 .text-huge{
     font-size:@textSizeHuge;
+    line-height:initial;
 }
 .text-large{
     font-size:@textSizeLarge;
+    line-height:initial;
 }
 .text-medium{
     font-size:@textSizeMedium;
+    line-height:initial;
 }
 
+/* Contextual Font Weights */
+.text-heavy{
+    font-weight:600;
+}
+.text-light{
+    font-weight:200;
+}
+
+/* Misc */
 .map-background{
     background:url(../img/Map.png) no-repeat center center;
     min-height:304px;
@@ -204,11 +217,36 @@ input::selection {
     font-size:32pt;
     margin-top:85px;
 }
+
+blockquote{
+    font-weight:300;
+}
+
+/* Logo */
+.logo img{
+    max-height:40px;
+}
+
+/* Screens */
+.screen img{
+    width:100%;
+    max-width:450px;
+}
+
+/* Mobile Menu */
+#mobile-menu .item {
+    padding-left:15px;
+    padding-right:15px;
+}
+
 /* Footer */
 .footer-menu{
     list-style-type:none;
     margin:0;
     padding:0;
+}
+.footer-menu a{
+    color:@white;
 }
 
 .loadUIOverrides();

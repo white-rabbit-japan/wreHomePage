@@ -29,7 +29,7 @@ body {
   overflow-x: hidden;
   min-width: 320px;
   background: #ffffff;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 1.4285em;
   color: rgba(0, 0, 0, 0.87);
@@ -46,7 +46,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.2857em;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
   font-weight: bold;
@@ -173,15 +173,30 @@ input::selection {
 .text-white {
   color: #ffffff !important;
 }
+
+/* Contextual Sizes */
 .text-huge {
   font-size: 6em;
+  line-height: initial;
 }
 .text-large {
   font-size: 4em;
+  line-height: initial;
 }
 .text-medium {
   font-size: 2em;
+  line-height: initial;
 }
+
+/* Contextual Font Weights */
+.text-heavy {
+  font-weight: 600;
+}
+.text-light {
+  font-weight: 200;
+}
+
+/* Misc */
 .map-background {
   background: url(../img/Map.png) no-repeat center center;
   min-height: 304px;
@@ -190,12 +205,35 @@ input::selection {
   font-size: 32pt;
   margin-top: 85px;
 }
+blockquote {
+  font-weight: 300;
+}
+
+/* Logo */
+.logo img {
+  max-height: 40px;
+}
+
+/* Screens */
+.screen img {
+  width: 100%;
+  max-width: 450px;
+}
+
+/* Mobile Menu */
+#mobile-menu .item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 /* Footer */
 .footer-menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+.footer-menu a {
+  color: #ffffff;
 }
 
 
