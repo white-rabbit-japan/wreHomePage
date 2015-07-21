@@ -936,12 +936,17 @@ input::selection {
 }
 /* Misc */
 .map-background {
-  background: url(../img/Map.png) no-repeat center center;
-  min-height: 304px;
+  background: url(../img/Map.png) repeat-y center center;
+  width: 100%;
 }
 .map-background h1 {
   font-size: 32pt;
-  margin-top: 85px;
+  padding: 50px 0;
+}
+@media (max-width: 991px) {
+  .map-background h1 {
+    font-size: 28pt;
+  }
 }
 blockquote {
   font-weight: 300;
@@ -968,6 +973,13 @@ blockquote {
 }
 .footer-menu a {
   color: #ffffff;
+}
+nav > a {
+  padding: 0 15px;
+}
+.column {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 /*******************************
         Global Overrides
