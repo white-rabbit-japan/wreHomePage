@@ -927,12 +927,23 @@ input::selection {
   font-size: 2em;
   line-height: initial;
 }
+@media (max-height: 767px) {
+  .text-medium {
+    font-size: 1.4em;
+  }
+}
 /* Contextual Font Weights */
 .text-heavy {
   font-weight: 600;
 }
 .text-light {
   font-weight: 200;
+}
+/* Text Alignment */
+@media (max-height: 767px) {
+  .center-mobile {
+    text-align: center;
+  }
 }
 /* Misc */
 .map-background {
@@ -980,6 +991,28 @@ nav > a {
 .column {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+#slider .slick-slide img {
+  display: inline;
+}
+#slider ul.slick-dots {
+  text-align: center;
+}
+#slider ul.slick-dots li {
+  display: inline;
+  position: relative;
+  left: -30px;
+  cursor: pointer;
+}
+#slider ul.slick-dots li button {
+  visibility: hidden;
+}
+#slider ul.slick-dots li:after {
+  content: "\25e6";
+  font-size: 3em;
+}
+#slider ul.slick-dots li.slick-active:after {
+  content: "\2022";
 }
 /*******************************
         Global Overrides

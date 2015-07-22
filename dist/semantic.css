@@ -711,6 +711,12 @@ input::selection {
   line-height: initial;
 }
 
+@media (max-height: 767px) {
+  .text-medium {
+    font-size: 1.4em;
+  }
+}
+
 /* Contextual Font Weights */
 
 .text-heavy {
@@ -719,6 +725,14 @@ input::selection {
 
 .text-light {
   font-weight: 200;
+}
+
+/* Text Alignment */
+
+@media (max-height: 767px) {
+  .center-mobile {
+    text-align: center;
+  }
 }
 
 /* Misc */
@@ -784,6 +798,34 @@ nav > a {
   padding-bottom: 25px;
 }
 
+#slider .slick-slide img {
+  display: inline;
+}
+
+#slider ul.slick-dots {
+  text-align: center;
+}
+
+#slider ul.slick-dots li {
+  display: inline;
+  position: relative;
+  left: -30px;
+  cursor: pointer;
+}
+
+#slider ul.slick-dots li button {
+  visibility: hidden;
+}
+
+#slider ul.slick-dots li:after {
+  content: "\25e6";
+  font-size: 3em;
+}
+
+#slider ul.slick-dots li.slick-active:after {
+  content: "\2022";
+}
+
 /*******************************
         Global Overrides
 *******************************/
@@ -816,7 +858,7 @@ nav > a {
   background: #e0e1e2 none;
   color: rgba(0, 0, 0, 0.6);
   font-family: 'Montserrat', sans-serif;
-  margin: 0em 0.25em 0em 0em;
+  margin: 0em 0.25em 1em 0em;
   padding: 0.78571429em 2.2em 0.78571429em;
   text-transform: none;
   text-shadow: none;
@@ -4551,7 +4593,7 @@ nav > a {
   flex-direction: row;
   font-size: 0em;
   vertical-align: baseline;
-  margin: 0em 0.25em 0em 0em;
+  margin: 1em 0.25em 0em 0em;
 }
 
 .ui.buttons:not(.basic):not(.inverted) {
@@ -13945,8 +13987,14 @@ ol.ui.horizontal.list li:before,
 }
 
 .as-seen-logo {
-  margin: 15px;
+  margin: 15px 20px;
   vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+  .as-seen-logo {
+    max-width: 35%;
+  }
 }
 
 .mashable-logo {
@@ -15279,8 +15327,8 @@ ol.ui.horizontal.list li:before,
 *******************************/
 
 .section {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 /*!
  * # Semantic UI x.x - Step
