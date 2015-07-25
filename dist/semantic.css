@@ -555,15 +555,15 @@ h5 {
 
 h1 {
   min-height: 1rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 h2 {
-  font-size: 1.714rem;
+  font-size: 1.9rem;
 }
 
 h3 {
-  font-size: 1.28rem;
+  font-size: 1.6rem;
 }
 
 h4 {
@@ -731,7 +731,7 @@ input::selection {
 
 @media (max-height: 767px) {
   .center-mobile {
-    text-align: center;
+    text-align: center!important;
   }
 }
 
@@ -824,6 +824,10 @@ nav > a {
 
 #slider ul.slick-dots li.slick-active:after {
   content: "\2022";
+}
+
+#main-head {
+  font-weight: 200;
 }
 
 /*******************************
@@ -4681,6 +4685,15 @@ nav > a {
   border-radius: 0px 0px 0.28571429rem 0.28571429rem;
 }
 
+/* Mobile */
+
+@media (max-width: 767px) {
+  .ui.mobile-fluid.button {
+    width: 100%;
+    display: block;
+  }
+}
+
 /*******************************
          Theme Overrides
 *******************************/
@@ -6486,15 +6499,15 @@ i.flag.zimbabwe:before {
 ---------------*/
 
 h1.ui.header {
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 h2.ui.header {
-  font-size: 1.714rem;
+  font-size: 1.9rem;
 }
 
 h3.ui.header {
-  font-size: 1.28rem;
+  font-size: 1.6rem;
 }
 
 h4.ui.header {
@@ -6533,15 +6546,15 @@ h5.ui.header .sub.header {
 
 .ui.huge.header {
   min-height: 1em;
-  font-size: 2em;
+  font-size: 2.4em;
 }
 
 .ui.large.header {
-  font-size: 1.714em;
+  font-size: 1.9em;
 }
 
 .ui.medium.header {
-  font-size: 1.28em;
+  font-size: 1.6em;
 }
 
 .ui.small.header {
@@ -7161,7 +7174,7 @@ a.ui.inverted.grey.header:hover {
 --------------------*/
 
 .ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 1.28em;
+  font-size: 1.6em;
 }
 
 /*******************************
@@ -15325,6 +15338,10 @@ ol.ui.horizontal.list li:before,
 /*******************************
             Loader
 *******************************/
+
+body > .section:first-of-type {
+  margin-top: -40px;
+}
 
 .section {
   padding-top: 50px;
