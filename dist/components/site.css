@@ -49,15 +49,15 @@ h5 {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.2857em;
   margin: calc(2rem -  0.14285em ) 0em 1rem;
-  font-weight: bold;
+  font-weight: 400;
   padding: 0em;
 }
 h1 {
   min-height: 1rem;
-  font-size: 2.4rem;
+  font-size: 2.9rem;
 }
 h2 {
-  font-size: 1.9rem;
+  font-size: 2.3rem;
 }
 h3 {
   font-size: 1.6rem;
@@ -202,7 +202,7 @@ input::selection {
 }
 
 /* Text Alignment */
-@media (max-height: 767px) {
+@media (max-width: 767px) {
   .center-mobile {
     text-align: center!important;
   }
@@ -210,7 +210,9 @@ input::selection {
 
 /* Misc */
 .map-background {
-  background: url(../img/Map.png) repeat-y center center;
+  background-image: url(../img/Map.png);
+  background-repeat: repeat-y;
+  background-position: center center;
   width: 100%;
 }
 .map-background h1 {
@@ -234,13 +236,21 @@ blockquote {
 /* Screens */
 .screen img {
   width: 100%;
-  max-width: 450px;
+  max-width: 550px;
 }
 
 /* Mobile Menu */
 #mobile-menu .item {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* Buttons */
+#get-started,
+#get-started-foot {
+  padding: 20px 50px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 /* Footer */

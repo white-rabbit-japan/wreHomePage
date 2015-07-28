@@ -233,7 +233,7 @@ input::selection {
 }
 
 /* Text Alignment */
-@media (max-height: 767px){
+@media (max-width: 767px){
     .center-mobile{
         text-align:center!important;
     }
@@ -241,7 +241,9 @@ input::selection {
 
 /* Misc */
 .map-background {
-    background: url(../img/Map.png) repeat-y center center;
+    background-image: url(../img/Map.png);
+    background-repeat: repeat-y;
+    background-position: center center;
     width: 100%;
 }
 
@@ -269,13 +271,20 @@ blockquote {
 /* Screens */
 .screen img {
     width: 100%;
-    max-width: 450px;
+    max-width: 550px;
 }
 
 /* Mobile Menu */
 #mobile-menu .item {
     padding-left: 15px;
     padding-right: 15px;
+}
+
+/* Buttons */
+#get-started,#get-started-foot{
+    padding: 20px 50px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
 }
 
 /* Footer */
