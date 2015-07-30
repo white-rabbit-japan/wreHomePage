@@ -1,0 +1,308 @@
+/*!
+ * # Semantic UI x.x - Site
+ * http://github.com/semantic-org/semantic-ui/
+ *
+ *
+ * Copyright 2015 Contributors
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ *
+ */
+
+
+/*******************************
+             Page
+*******************************/
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+html {
+  font-size: 14px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  min-width: 320px;
+  background: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.4285em;
+  color: rgba(0, 0, 0, 0.87);
+  font-smoothing: antialiased;
+}
+
+
+/*******************************
+             Headers
+*******************************/
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2857em;
+  margin: calc(2rem -  0.14285em ) 0em 1rem;
+  font-weight: 400;
+  padding: 0em;
+}
+h1 {
+  min-height: 1rem;
+  font-size: 2.9rem;
+}
+h2 {
+  font-size: 2.3rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.071rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child {
+  margin-top: 0em;
+}
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child {
+  margin-bottom: 0em;
+}
+
+
+/*******************************
+             Text
+*******************************/
+
+p {
+  margin: 0em 0em 1em;
+  line-height: 1.4285em;
+}
+p:first-child {
+  margin-top: 0em;
+}
+p:last-child {
+  margin-bottom: 0em;
+}
+
+/*-------------------
+        Links
+--------------------*/
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+a:hover {
+  color: #1e70bf;
+  text-decoration: none;
+}
+
+
+/*******************************
+          Highlighting
+*******************************/
+
+
+/* Site */
+::-webkit-selection {
+  background-color: #cce2ff;
+  color: rgba(0, 0, 0, 0.87);
+}
+::-moz-selection {
+  background-color: #cce2ff;
+  color: rgba(0, 0, 0, 0.87);
+}
+::selection {
+  background-color: #cce2ff;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* Form */
+textarea::-webkit-selection,
+input::-webkit-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+textarea::-moz-selection,
+input::-moz-selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+textarea::selection,
+input::selection {
+  background-color: rgba(100, 100, 100, 0.4);
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* Contextual Backgrounds */
+.background-green {
+  background-color: #4bc251;
+}
+.background-blue {
+  background-color: #253c44;
+}
+.background-grey {
+  background-color: #edeff1;
+}
+
+/* Contextual Colors */
+.text-green {
+  color: #4bc251 !important;
+}
+.text-blue {
+  color: #253c44 !important;
+}
+.text-grey {
+  color: #edeff1 !important;
+}
+.text-white {
+  color: #ffffff !important;
+}
+
+/* Contextual Sizes */
+.text-huge {
+  font-size: 6em;
+  line-height: initial;
+}
+.text-large {
+  font-size: 4em;
+  line-height: initial;
+}
+.text-medium {
+  font-size: 2em;
+  line-height: initial;
+}
+@media (max-height: 767px) {
+  .text-medium {
+    font-size: 1.4em;
+  }
+}
+
+/* Contextual Font Weights */
+.text-heavy {
+  font-weight: 600;
+}
+.text-light {
+  font-weight: 200;
+}
+
+/* Text Alignment */
+@media (max-width: 767px) {
+  .center-mobile {
+    text-align: center!important;
+  }
+}
+
+/* Misc */
+.map-background {
+  background-image: url(../img/Map.png);
+  background-repeat: repeat-y;
+  background-position: center center;
+  width: 100%;
+}
+.map-background h1 {
+  font-size: 32pt;
+  padding: 50px 0;
+}
+@media (max-width: 991px) {
+  .map-background h1 {
+    font-size: 28pt;
+  }
+}
+blockquote {
+  font-weight: 300;
+}
+
+/* Logo */
+.logo img {
+  max-height: 40px;
+}
+
+/* Screens */
+.screen img {
+  width: 100%;
+  max-width: 550px;
+}
+
+/* Mobile Menu */
+#mobile-menu .item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Buttons */
+#get-started,
+#get-started-foot {
+  padding: 20px 50px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+.footer-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-menu a {
+  color: #ffffff;
+}
+nav > a {
+  padding: 0 15px;
+}
+.column {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+#slider .slick-slide img {
+  display: inline;
+}
+#slider ul.slick-dots {
+  text-align: center;
+}
+#slider ul.slick-dots li {
+  display: inline;
+  position: relative;
+  left: -30px;
+  cursor: pointer;
+}
+#slider ul.slick-dots li button {
+  visibility: hidden;
+}
+#slider ul.slick-dots li:after {
+  content: "\25e6";
+  font-size: 3em;
+}
+#slider ul.slick-dots li.slick-active:after {
+  content: "\2022";
+}
+#main-head {
+  font-weight: 200;
+}
+
+
+/*******************************
+        Global Overrides
+*******************************/
+
+
+
+/*******************************
+         Site Overrides
+*******************************/
+
