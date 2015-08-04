@@ -1,3 +1,14 @@
 /*******************************
          Site Overrides
 *******************************/
+.ui.button.inverted {
+color: #fff;
+
+
+}
+
+.ui.button.inverted:hover {
+color: #4bc251;
+background:white;
+
+}

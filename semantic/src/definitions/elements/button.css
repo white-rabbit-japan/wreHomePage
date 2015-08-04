@@ -1084,9 +1084,9 @@
   border: 1px solid rgba(34, 36, 38, 0.15);
   border-radius: 0.28571429rem;
 }
-.ui.basic.buttons .button {
-  border-radius: 0em;
-}
+/*.ui.basic.buttons .button {*/
+/*border-radius: 0em;*/
+/*}*/
 .ui.basic.buttons .button:hover,
 .ui.basic.button:hover {
   background: #ffffff !important;

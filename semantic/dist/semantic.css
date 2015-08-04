@@ -882,6 +882,7 @@ nav > a {
   font-style: normal;
   text-align: center;
   text-decoration: none;
+  border-radius: 0.28571429rem;
   box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1709,11 +1710,13 @@ nav > a {
   position: absolute;
   height: 100%;
   line-height: 1;
+  border-radius: 0px;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
   width: 2.57142857em;
   background-color: rgba(0, 0, 0, 0.05);
   text-align: center;
   color: '';
-  border-radius: 0.28571429rem 0px 0px 0.28571429rem;
   box-shadow: -1px 0px 0px 0px transparent inset;
 }
 
@@ -1735,7 +1738,9 @@ nav > a {
 .ui[class*="right labeled"].icon.button > .icon {
   left: auto;
   right: 0em;
-  border-radius: 0em 0.28571429rem 0.28571429rem 0em;
+  border-radius: 0px;
+  border-top-right-radius: inherit;
+  border-bottom-right-radius: inherit;
   box-shadow: 1px 0px 0px 0px transparent inset;
 }
 
@@ -2478,167 +2483,6 @@ nav > a {
 .ui.inverted.grey.basic.buttons .button:active,
 .ui.inverted.grey.buttons .basic.button:active,
 .ui.inverted.grey.basic.button:active {
-  box-shadow: 0px 0px 0px 2px #c2c4c5 inset !important;
-  color: #ffffff !important;
-}
-
-/*--- White ---*/
-
-.ui.white.buttons .button,
-.ui.white.button {
-  background-color: #ffffff;
-  color: #ffffff;
-  text-shadow: none;
-  background-image: none;
-}
-
-.ui.white.button {
-  box-shadow: 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
-}
-
-.ui.white.buttons .button:hover,
-.ui.white.button:hover {
-  background-color: #fbfcfc;
-  color: #ffffff;
-  text-shadow: none;
-}
-
-.ui.white.buttons .button:focus,
-.ui.white.button:focus {
-  background-color: #ffffff;
-  color: #ffffff;
-  text-shadow: none;
-}
-
-.ui.white.buttons .button:active,
-.ui.white.button:active {
-  background-color: #ffffff;
-  color: #ffffff;
-  text-shadow: none;
-}
-
-.ui.white.buttons .active.button,
-.ui.white.buttons .active.button:active,
-.ui.white.active.button,
-.ui.white.button .active.button:active {
-  background-color: #dfe2e6;
-  color: #ffffff;
-  text-shadow: none;
-}
-
-/* Basic */
-
-.ui.basic.white.buttons .button,
-.ui.basic.white.button {
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset !important;
-  color: rgba(0, 0, 0, 0.6) !important;
-}
-
-.ui.basic.white.buttons .button:hover,
-.ui.basic.white.button:hover {
-  background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #fbfcfc inset !important;
-  color: #fbfcfc !important;
-}
-
-.ui.basic.white.buttons .button:focus,
-.ui.basic.white.button:focus {
-  background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
-}
-
-.ui.basic.white.buttons .active.button,
-.ui.basic.white.active.button {
-  background: transparent !important;
-  box-shadow: 0px 0px 0px 2px #dfe2e6 inset !important;
-  color: #ffffff !important;
-}
-
-.ui.basic.white.buttons .button:active,
-.ui.basic.white.button:active {
-  box-shadow: 0px 0px 0px 2px #ffffff inset !important;
-  color: #ffffff !important;
-}
-
-.ui.buttons:not(.vertical) > .basic.white.button:not(:first-child) {
-  margin-left: -2px;
-}
-
-/* Inverted */
-
-.ui.inverted.white.buttons .button,
-.ui.inverted.white.button {
-  background-color: transparent;
-  box-shadow: 0px 0px 0px 2px #d4d4d5 inset !important;
-  color: #ffffff;
-}
-
-.ui.inverted.white.buttons .button:hover,
-.ui.inverted.white.button:hover,
-.ui.inverted.white.buttons .button:focus,
-.ui.inverted.white.button:focus,
-.ui.inverted.white.buttons .button.active,
-.ui.inverted.white.button.active,
-.ui.inverted.white.buttons .button:active,
-.ui.inverted.white.button:active {
-  box-shadow: none !important;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.ui.inverted.white.buttons .button:hover,
-.ui.inverted.white.button:hover {
-  background-color: #cfd0d2;
-}
-
-.ui.inverted.white.buttons .button:focus,
-.ui.inverted.white.button:focus {
-  background-color: #c7c9cb;
-}
-
-.ui.inverted.white.buttons .active.button,
-.ui.inverted.white.active.button {
-  background-color: #cfd0d2;
-}
-
-.ui.inverted.white.buttons .button:active,
-.ui.inverted.white.button:active {
-  background-color: #c2c4c5;
-}
-
-/* Inverted Basic */
-
-.ui.inverted.white.basic.buttons .button,
-.ui.inverted.white.buttons .basic.button,
-.ui.inverted.white.basic.button {
-  background-color: transparent;
-  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.5) inset !important;
-  color: #ffffff !important;
-}
-
-.ui.inverted.white.basic.buttons .button:hover,
-.ui.inverted.white.buttons .basic.button:hover,
-.ui.inverted.white.basic.button:hover {
-  box-shadow: 0px 0px 0px 2px #cfd0d2 inset !important;
-  color: #ffffff !important;
-}
-
-.ui.inverted.white.basic.buttons .button:focus,
-.ui.inverted.white.basic.buttons .button:focus,
-.ui.inverted.white.basic.button:focus {
-  box-shadow: 0px 0px 0px 2px #c7c9cb inset !important;
-  color: #dcddde !important;
-}
-
-.ui.inverted.white.basic.buttons .active.button,
-.ui.inverted.white.buttons .basic.active.button,
-.ui.inverted.white.basic.active.button {
-  box-shadow: 0px 0px 0px 2px #cfd0d2 inset !important;
-  color: #ffffff !important;
-}
-
-.ui.inverted.white.basic.buttons .button:active,
-.ui.inverted.white.buttons .basic.button:active,
-.ui.inverted.white.basic.button:active {
   box-shadow: 0px 0px 0px 2px #c2c4c5 inset !important;
   color: #ffffff !important;
 }
@@ -4696,15 +4540,6 @@ nav > a {
   border-radius: 0px 0px 0.28571429rem 0.28571429rem;
 }
 
-/* Mobile */
-
-@media (max-width: 767px) {
-  .ui.mobile-fluid.button {
-    width: 100%;
-    display: block;
-  }
-}
-
 /*******************************
          Theme Overrides
 *******************************/
@@ -4712,6 +4547,15 @@ nav > a {
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.button.inverted {
+  color: #fff;
+}
+
+.ui.button.inverted:hover {
+  color: #4bc251;
+  background: white;
+}
 /*!
  * # Semantic UI x.x - Container
  * http://github.com/semantic-org/semantic-ui/
@@ -25984,143 +25828,3 @@ html.ios body {
 /*******************************
          Site Overrides
 *******************************/
-
-#features_section h2 {
-  margin-bottom: 5px;
-}
-
-#feature_subtitle {
-  color: #737373;
-  font-size: 20px;
-}
-
-#features {
-  margin-top: 30px;
-}
-
-#features h3 {
-  font-size: 2.0rem;
-}
-
-#features p {
-  color: #737373;
-  font-size: 16px; 
-}
-
-#features .column {
-  margin-bottom: 40px;
-}
-
-#shipping_methods_section {
-  padding-top: 75px;
-  padding-bottom: 75px;
-}
-
-#shipping_methods_title {
-  width: 35% !important;
-}
-
-.shipping-logo {
-  margin-right: 50px;
-  vertical-align: middle;
-}
-
-.shipping-logo.last {
-  margin-right: 0;
-}
-
-#money_back_guarantee_section {
-  padding-top: 80px;
-  padding-bottom: 120px;
-}
-
-#money_back_guarantee h1 {
-  font-size: 8.5em;
-  margin-bottom: 0;
-}
-
-#money_back_guarantee h1:after {
-  content: '%';
-  font-size: 0.5em;
-  vertical-align: text-top;
-  padding-top: 15px;
-  display: inline-block;
-}
-
-#money_back_guarantee h3 {
-  font-size: 2.2em;
-  margin-top: 0;
-  margin-bottom: 5px;
-}
-
-#money_back_guarantee p {
-  color: #737373;
-  font-size: 1.4em;
-}
-
-#trusted_by_section .column {
-  width: 55% !important;
-}
-
-#trusted_by_section h1 {
-  font-size: 24pt;
-}
-
-#payment_section {
-  padding-top: 80px;
-  padding-bottom: 60px;
-}
-
-.payment-logo {
-  vertical-align: middle;
-  margin-right: 50px;
-}
-
-.payment-logo.paypal-logo {
-  margin-right: 20px;
-}
-
-.payment-logo.last {
-  margin-right: 0;
-}
-
-.payment-logo.verisign-logo {
-  margin-top: -8px;
-}
-
-#payment_logos {
-  margin-top: 15px;
-}
-
-#quotes_section blockquote {
-  margin-bottom: 20px;
-}
-
-#quotes_section p {
-  margin-top: 10px;
-  font-size: 1.3em;
-}
-
-#get_started_section .container {
-  padding-top: 40px;
-  padding-bottom: 70px;
-}
-
-#get_started_section p {
-  color: #737373;
-  font-size: 1.4em;
-  font-weight: 400;
-}
-
-footer p {
-  line-height: 25px;
-  margin-top: 40px;
-}
-
-footer ul {
-  margin-top: 25px !important;
-}
-
-footer li {
-  margin-bottom: 12px;
-}
