@@ -1,3 +1,19 @@
 /*******************************
          Site Overrides
 *******************************/
+//div.screen p:last-child {
+//    margin-bottom: 2em;
+//}
+
+div.screen p {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+#feature_subtitle {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+
+}

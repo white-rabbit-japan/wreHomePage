@@ -848,6 +848,18 @@ nav > a {
 /*******************************
          Site Overrides
 *******************************/
+
+div.screen p {
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
+}
+
+#feature_subtitle {
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
+}
 /*!
  * # Semantic UI x.x - Button
  * http://github.com/semantic-org/semantic-ui/
