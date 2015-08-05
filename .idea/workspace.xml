@@ -21,6 +21,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="imogg.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/semantic/img/imogg.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="michaels.jpg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/semantic/img/michaels.jpg">
           <provider selected="true" editor-type-id="images">
@@ -48,8 +55,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/semantic/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33260155">
-              <caret line="255" column="48" selection-start-line="255" selection-start-column="48" selection-end-line="255" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.7200878">
+              <caret line="410" column="9" selection-start-line="410" selection-start-column="9" selection-end-line="410" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -765,10 +772,15 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/semantic/img/imogg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/semantic/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33260155">
-          <caret line="255" column="48" selection-start-line="255" selection-start-column="48" selection-end-line="255" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.7200878">
+          <caret line="410" column="9" selection-start-line="410" selection-start-column="9" selection-end-line="410" selection-end-column="9" />
           <folding />
         </state>
       </provider>
