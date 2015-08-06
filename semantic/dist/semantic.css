@@ -861,8 +861,8 @@ div.screen p {
   font-weight: 400;
 }
 
-img.shipping-logo,
-img.payment-logo {
+image.shipping-logo,
+div.payment-logo {
   margin-right: 20px;
 }
 
@@ -871,7 +871,7 @@ img.payment-logo {
   margin-bottom: 25px;
 }
 
-img.ui.image {
+span.ui.image {
   display: inline-block !important;
 }
 
@@ -898,6 +898,79 @@ img.ui.image {
   img.payment-logo {
     margin-top: 30px;
   }
+}
+
+.AmEx,
+.Discover,
+.EMS,
+.fedex-logo,
+.JPPost,
+.mastercard-logo,
+.Paypal,
+.Stripe,
+.Verisign,
+.Visa {
+  background: url("../img/shipnpaylogos/sprites.png") no-repeat;
+}
+
+.AmEx {
+  background-position: -1px -200px;
+  width: 63px;
+  height: 58px;
+}
+
+.Discover {
+  background-position: -451px 0;
+  width: 108px;
+  height: 83px;
+}
+
+.EMS {
+  background-position: -101px -200px;
+  width: 138px;
+  height: 44px;
+}
+
+.fedex-logo {
+  background-position: -151px -100px;
+  width: 139px;
+  height: 51px;
+}
+
+.JPPost {
+  background-position: 0 -100px;
+  width: 100px;
+  height: 70px;
+}
+
+.mastercard-logo {
+  background-position: -351px 0;
+  width: 84px;
+  height: 51px;
+}
+
+.Paypal {
+  background-position: -301px -100px;
+  width: 169px;
+  height: 77px;
+}
+
+.Stripe {
+  background-position: -251px 0;
+  width: 84px;
+  height: 35px;
+}
+
+.Verisign {
+  background-position: -101px 0;
+  width: 97px;
+  height: 50px;
+}
+
+.Visa {
+  background-position: -1px 0;
+  width: 93px;
+  height: 29px;
 }
 /*!
  * # Semantic UI x.x - Button

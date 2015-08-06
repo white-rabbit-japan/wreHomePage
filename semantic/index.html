@@ -15,6 +15,23 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.6/slick.css"/>
 </head>
 <body>
+<script>
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+  ga('create', 'UA-126293-26', 'auto');
+  ga('send', 'pageview');
+
+</script>
 <div class="section background-green text-white">
   <div class="ui container">
     <header>
@@ -200,14 +217,14 @@
         <h2>Flexible, Secure Payment Options</h2>
       </div>
       <div class="column center aligned" id="payment_logos">
-        <img class="ui middle aligned image payment-logo paypal-logo" src="img/Paypal.png" alt="Paypal"/>
-        <img class="ui middle aligned image payment-logo visa-logo" src="img/Visa.png" alt="Visa"/>
-        <img class="ui middle aligned image payment-logo mastercard-logo" src="img/mastercard-logo.png"
-             alt="Mastercard"/>
-        <img class="ui middle aligned image payment-logo discover-logo" src="img/Discover.png" alt="Discover"/>
-        <img class="ui middle aligned image payment-logo amex-logo" src="img/AmEx.png" alt="American Express"/>
-        <img class="ui middle aligned image payment-logo stripe-logo" src="img/Stripe.png" alt="Stripe"/>
-        <img class="ui middle aligned image payment-logo verisign-logo last" src="img/Verisign.png" alt="VeriSign"/>
+        <div class="ui middle aligned image payment-logo Paypal" alt="Paypal"></div>
+        <div class="ui middle aligned image payment-logo Visa" alt="Visa"></div>
+        <div class="ui middle aligned image payment-logo mastercard-logo"
+             alt="Mastercard"></div>
+        <div class="ui middle aligned image payment-logo Discover" alt="Discover"></div>
+        <div class="ui middle aligned image payment-logo AmEx" alt="American Express"></div>
+        <div class="ui middle aligned image payment-logo Stripe" alt="Stripe"></div>
+        <div class="ui middle aligned image payment-logo Verisign last" alt="VeriSign"></div>
       </div>
     </div>
   </div>
@@ -400,23 +417,7 @@
     </div>
   </div>
 </footer>
-<script>
-  (function(i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-126293-27', 'auto');
-  ga('send', 'pageview');
-
-</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="dist/semantic.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.6/slick.min.js"></script>
