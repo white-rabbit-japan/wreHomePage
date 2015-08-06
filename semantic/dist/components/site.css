@@ -317,7 +317,7 @@ div.screen p {
   font-weight: 400;
 }
 image.shipping-logo,
-div.payment-logo {
+span.payment-logo {
   margin-right: 20px;
 }
 .as-seen-logo {
@@ -359,6 +359,7 @@ span.ui.image {
 .Verisign,
 .Visa {
   background: url(../img/shipnpaylogos/sprites.png) no-repeat;
+  display: block;
 }
 .AmEx {
   background-position: -1px -200px;
