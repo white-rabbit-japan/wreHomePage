@@ -25840,3 +25840,9 @@ html.ios body {
 /*******************************
          Site Overrides
 *******************************/
+
+img {
+  margin-right: 20px;
+  vertical-align: middle;
+  margin-top: 30px;
+}
