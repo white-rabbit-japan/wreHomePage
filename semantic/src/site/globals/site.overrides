@@ -122,4 +122,12 @@ span.ui.image {
 }
 
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+}
 
+div.package-forwarding-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
