@@ -18,7 +18,8 @@ div.screen p {
 
 }
 
-image.shipping-logo, span.payment-logo {
+img.shipping-logo, span.payment-logo {
+  margin-right: 20px;
   margin-right: 20px;
 }
 
@@ -52,6 +53,7 @@ span.ui.image {
 @media only screen and (max-width: 991px) {
   img.shipping-logo, img.payment-logo {
     margin-top: 30px;
+
   }
 }
 
@@ -99,7 +101,7 @@ span.ui.image {
 
 .Paypal {
     background-position: -301px -100px;
-    width: 169px;
+    width: 149px;
     height: 77px;
 }
 
