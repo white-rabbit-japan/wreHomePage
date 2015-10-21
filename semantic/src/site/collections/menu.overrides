@@ -1,0 +1,21 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+
+.ui.text.menu {
+margin: 0;
+margin-top: -10px;
+justify-content: center;
+align-items:center;
+}
+
+.ui.text.menu a.item {
+color: white;
+padding: 0 10px;
+}
+
+.ui.text.menu a.item:hover {
+text-decoration: underline;
+
+}

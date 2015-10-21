@@ -1,0 +1,21 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@primaryColor   : #7CC05A;
+@green			: #4bc251;
+@blue			: #253c44;
+@grey			: #edeff1;
+@white			: #fff;
+
+@textSizeHuge	: 6em;
+@textSizeLarge	: 4em;
+@textSizeMedium	: 2em;
+
+@pageFont		: 'Open Sans', sans-serif;
+@headerFont		: 'Montserrat', sans-serif;
+
+@h1				: 2.9rem;
+@h2				: 2.3rem;
+@h3				: 1.6rem;
+@headerFontWeight:	400;

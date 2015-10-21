@@ -1,0 +1,135 @@
+/*******************************
+         Site Overrides
+*******************************/
+//div.screen p:last-child {
+//    margin-bottom: 2em;
+//}
+
+div.screen p {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+#feature_subtitle {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+
+}
+
+img.shipping-logo, span.payment-logo {
+  margin-right: 20px;
+  margin-right: 20px;
+}
+
+.as-seen-logo {
+  margin-right: 20px;
+  margin-bottom: 25px;
+}
+
+span.ui.image {
+  display: inline-block !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.container {
+    width: auto;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  #features {
+    text-align: center;
+  }
+}
+
+#features .column {
+  margin-bottom: calc(6 * 0.25em);
+}
+
+@media only screen and (max-width: 991px) {
+  img.shipping-logo, img.payment-logo {
+    margin-top: 30px;
+
+  }
+}
+
+// sprites
+.AmEx, .Discover, .EMS, .fedex-logo, .JPPost, .mastercard-logo, .Paypal, .Stripe, .Verisign, .Visa {
+    background: url(../img/shipnpaylogos/sprites.png) no-repeat;
+    display: block;
+}
+
+.AmEx {
+    background-position: -1px -200px;
+    width: 63px;
+    height: 58px;
+}
+
+.Discover {
+    background-position: -451px 0;
+    width: 108px;
+    height: 83px;
+}
+
+.EMS {
+    background-position: -101px -200px;
+    width: 138px;
+    height: 44px;
+}
+
+.fedex-logo {
+    background-position: -151px -100px;
+    width: 139px;
+    height: 51px;
+}
+
+.JPPost {
+    background-position: 0 -100px;
+    width: 100px;
+    height: 70px;
+}
+
+.mastercard-logo {
+    background-position: -351px 0;
+    width: 84px;
+    height: 51px;
+}
+
+.Paypal {
+    background-position: -301px -100px;
+    width: 149px;
+    height: 77px;
+}
+
+.Stripe {
+    background-position: -251px 0;
+    width: 84px;
+    height: 35px;
+}
+
+.Verisign {
+    background-position: -101px 0;
+    width: 97px;
+    height: 50px;
+}
+
+.Visa {
+    background-position: -1px 0;
+    width: 93px;
+    height: 29px;
+}
+
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+}
+
+div.package-forwarding-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
