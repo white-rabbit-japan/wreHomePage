@@ -133,3 +133,14 @@ div.package-forwarding-section {
     padding-top: 25px;
     padding-bottom: 25px;
 }
+
+.gallery-container {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+.gallery-inner-rows {
+ display: flex;
+ flex-direction: column;
+}
