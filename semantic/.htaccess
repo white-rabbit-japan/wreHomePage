@@ -1,0 +1,29 @@
+RewriteEngine On
+# This will enable the Rewrite capabilities
+
+#RewriteCond %{HTTPS} !=on
+# This checks to make sure the connection is not already HTTPS
+
+#RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+# This rule will redirect users from their original location, to the same location but using HTTPS.
+# i.e.  http://www.example.com/foo/ to https://www.example.com/foo/
+# The leading slash is made optional so that this will work either in httpd.conf
+# or .htaccess context
+
+RewriteCond %{HTTP_HOST} ^whiterabbitexpress.com [NC]
+RewriteRule ^(.*)$ https://www.whiterabbitexpress.com/$1 [L,R=301]
+
+ # 1 week for all your static assets
+ <filesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|svg|css|swf)$">
+ Header set Cache-Control "max-age=604800, public"
+ </filesMatch>
+
+ # 1 DAYS for rss feeds and robots
+ <filesMatch ".(xml|txt)$">
+ Header set Cache-Control "max-age=86400, public, must-revalidate"
+ </filesMatch>
+
+ # 4 HOURS for your real articles files
+ <filesMatch ".(html|htm)$">
+ Header set Cache-Control "max-age=14400, must-revalidate"
+ </filesMatch>
