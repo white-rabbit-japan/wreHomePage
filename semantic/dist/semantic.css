@@ -1013,6 +1013,11 @@ div.package-forwarding-section {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
+a#cta {
+  background-color: #fff;
+  color: #4bc251;
+}
 /*!
  * # Semantic UI 2.1.4 - Button
  * http://github.com/semantic-org/semantic-ui/
