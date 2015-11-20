@@ -448,6 +448,10 @@ div.package-forwarding-section {
           flex-direction: column;
 }
 a#cta {
-  background-color: #fff;
+  background-color: #eee ;
   color: #4bc251;
+}
+a#cta:hover,
+a#cta:focus {
+  background-color: #fff;
 }

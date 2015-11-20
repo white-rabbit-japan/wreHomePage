@@ -146,6 +146,10 @@ div.package-forwarding-section {
 }
 
 a#cta {
-  background-color: @white ;
+  background-color: #eee ;
   color: @green ;
+  &:hover, &:focus {
+  background-color: #fff;
+
+  }
 }
