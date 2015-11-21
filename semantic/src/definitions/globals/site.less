@@ -14,8 +14,8 @@
             Theme
 *******************************/
 
-@type: 'global';
-@element: 'site';
+@type    : 'global';
+@element : 'site';
 
 @import (multiple) '../../theme.config';
 
@@ -27,26 +27,27 @@
 
 html,
 body {
-    height: 100%;
-    margin: 0;
+  height: 100%;
 }
 
 html {
-    font-size: @emSize;
+  font-size: @emSize;
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
-    overflow-x: @pageOverflowX;
-    min-width: @pageMinWidth;
-    background: @pageBackground;
-    font-family: @pageFont;
-    font-size: @fontSize;
-    line-height: @lineHeight;
-    color: @textColor;
-    font-smoothing: @fontSmoothing;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: @pageOverflowX;
+  min-width: @pageMinWidth;
+  background: @pageBackground;
+  font-family: @pageFont;
+  font-size: @fontSize;
+  line-height: @lineHeight;
+  color: @textColor;
+  font-smoothing: @fontSmoothing;
 }
+
+
 
 /*******************************
              Headers
@@ -57,32 +58,28 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: @headerFont;
-    line-height: @headerLineHeight;
-    margin: @headerMargin;
-    font-weight: @headerFontWeight;
-    padding: 0em;
+  font-family: @headerFont;
+  line-height: @headerLineHeight;
+  margin: @headerMargin;
+  font-weight: @headerFontWeight;
+  padding: 0em;
 }
 
 h1 {
-    min-height: 1rem;
-    font-size: @h1;
+  min-height: 1rem;
+  font-size: @h1;
 }
-
 h2 {
-    font-size: @h2;
+  font-size: @h2;
 }
-
 h3 {
-    font-size: @h3;
+  font-size: @h3;
 }
-
 h4 {
-    font-size: @h4;
+  font-size: @h4;
 }
-
 h5 {
-    font-size: @h5;
+  font-size: @h5;
 }
 
 h1:first-child,
@@ -90,7 +87,7 @@ h2:first-child,
 h3:first-child,
 h4:first-child,
 h5:first-child {
-    margin-top: 0em;
+  margin-top: 0em;
 }
 
 h1:last-child,
@@ -98,7 +95,7 @@ h2:last-child,
 h3:last-child,
 h4:last-child,
 h5:last-child {
-    margin-bottom: 0em;
+  margin-bottom: 0em;
 }
 
 
@@ -107,16 +104,14 @@ h5:last-child {
 *******************************/
 
 p {
-    margin: @paragraphMargin;
-    line-height: @paragraphLineHeight;
+  margin: @paragraphMargin;
+  line-height: @paragraphLineHeight;
 }
-
 p:first-child {
-    margin-top: 0em;
+  margin-top: 0em;
 }
-
 p:last-child {
-    margin-bottom: 0em;
+  margin-bottom: 0em;
 }
 
 /*-------------------
@@ -124,14 +119,14 @@ p:last-child {
 --------------------*/
 
 a {
-    color: @linkColor;
-    text-decoration: @linkUnderline;
+  color: @linkColor;
+  text-decoration: @linkUnderline;
+}
+a:hover {
+  color: @linkHoverColor;
+  text-decoration: @linkHoverUnderline;
 }
 
-a:hover {
-    color: @linkHoverColor;
-    text-decoration: @linkHoverUnderline;
-}
 
 /*******************************
           Highlighting
@@ -139,201 +134,34 @@ a:hover {
 
 /* Site */
 ::-webkit-selection {
-    background-color: @highlightBackground;
-    color: @highlightColor;
+  background-color: @highlightBackground;
+  color: @highlightColor;
 }
-
 ::-moz-selection {
-    background-color: @highlightBackground;
-    color: @highlightColor;
+  background-color: @highlightBackground;
+  color: @highlightColor;
 }
-
 ::selection {
-    background-color: @highlightBackground;
-    color: @highlightColor;
+  background-color: @highlightBackground;
+  color: @highlightColor;
 }
 
 /* Form */
 textarea::-webkit-selection,
 input::-webkit-selection {
-    background-color: @inputHighlightBackground;
-    color: @inputHighlightColor;
+  background-color: @inputHighlightBackground;
+  color: @inputHighlightColor;
 }
-
 textarea::-moz-selection,
 input::-moz-selection {
-    background-color: @inputHighlightBackground;
-    color: @inputHighlightColor;
+  background-color: @inputHighlightBackground;
+  color: @inputHighlightColor;
 }
-
 textarea::selection,
 input::selection {
-    background-color: @inputHighlightBackground;
-    color: @inputHighlightColor;
+  background-color: @inputHighlightBackground;
+  color: @inputHighlightColor;
 }
 
-/* Contextual Backgrounds */
-.background-green {
-    background-color: @green;
-}
-
-.background-blue {
-    background-color: @blue;
-}
-
-.background-grey {
-    background-color: @grey;
-}
-
-/* Contextual Colors */
-.text-green {
-    color: @green !important;
-}
-
-.text-blue {
-    color: @blue !important;
-}
-
-.text-grey {
-    color: @grey !important;
-}
-
-.text-white {
-    color: @white !important;
-}
-
-/* Contextual Sizes */
-.text-huge {
-    font-size: @textSizeHuge;
-    line-height: initial;
-}
-
-.text-large {
-    font-size: @textSizeLarge;
-    line-height: initial;
-}
-
-.text-medium {
-    font-size: @textSizeMedium;
-    line-height: initial;
-}
-@media (max-height: 767px){
-    .text-medium{
-        font-size:1.4em;
-    }
-}
-
-/* Contextual Font Weights */
-.text-heavy {
-    font-weight: 600;
-}
-
-.text-light {
-    font-weight: 200;
-}
-
-/* Text Alignment */
-@media (max-width: 767px){
-    .center-mobile{
-        text-align:center!important;
-    }
-}
-
-/* Misc */
-.map-background {
-    background-image: url(../img/Map.png);
-    background-repeat: repeat-y;
-    background-position: center center;
-    width: 100%;
-}
-
-
-.map-background h1 {
-    font-size: 32pt;    
-    padding:50px 0;
-}
-
-@media (max-width: 991px) {
-    .map-background h1 {
-        font-size: 28pt;        
-    }
-}
-
-blockquote {
-    font-weight: 300;
-}
-
-/* Logo */
-.logo img {
-    max-height: 40px;
-}
-
-/* Screens */
-.screen img {
-    width: 100%;
-    max-width: 550px;
-}
-
-/* Mobile Menu */
-#mobile-menu .item {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-/* Buttons */
-#get-started,#get-started-foot{
-    padding: 20px 50px;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-}
-
-/* Footer */
-.footer-menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.footer-menu a {
-    color: @white;
-}
-
-nav > a {
-    padding: 0 15px;
-}
-
-.column {
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-#slider .slick-slide img{
-    display:inline;
-}
-#slider ul.slick-dots{
-    text-align:center;
-}
-#slider ul.slick-dots li {
-    display: inline;
-    position:relative;
-    left:-30px;
-    cursor:pointer;
-}
-
-#slider ul.slick-dots li button{
-    visibility:hidden;
-}
-
-#slider ul.slick-dots li:after{
-    content:"\25e6";  
-    font-size:3em;          
-}
-
-#slider ul.slick-dots li.slick-active:after{
-    content:"\2022";
-}
-
-#main-head{    
-    font-weight:200;
-}
 
 .loadUIOverrides();
