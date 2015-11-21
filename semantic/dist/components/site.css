@@ -304,15 +304,6 @@ div.package-forwarding-section {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-a#cta {
-  background-color: #eee;
-  color: #4bc251;
-  margin: 0;
-}
-a#cta:hover,
-a#cta:focus {
-  background-color: #fff;
-}
 
 /* Contextual Backgrounds */
 .background-green {
