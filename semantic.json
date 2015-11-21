@@ -30,7 +30,6 @@
     "list",
     "grid",
     "menu",
-    "item",
-    "checkbox"
+    "item"
   ]
 }
