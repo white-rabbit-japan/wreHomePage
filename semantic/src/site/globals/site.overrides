@@ -4,17 +4,20 @@
 //div.screen p:last-child {
 //    margin-bottom: 2em;
 //}
+h1:last-child, p:last-child {
+  margin-top: 10px;
+}
 
 div.screen p {
-    font-size: 16px;
-    color: #666;
-    font-weight: 400;
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
 }
 
 #feature_subtitle {
-    font-size: 16px;
-    color: #666;
-    font-weight: 400;
+  font-size: 16px;
+  color: #666;
+  font-weight: 400;
 
 }
 
@@ -59,97 +62,292 @@ span.ui.image {
 
 // sprites
 .AmEx, .Discover, .EMS, .fedex-logo, .JPPost, .mastercard-logo, .Paypal, .Stripe, .Verisign, .Visa {
-    background: url(../img/shipnpaylogos/sprites.png) no-repeat;
-    display: block;
+  background: url(../img/shipnpaylogos/sprites.png) no-repeat;
+  display: block;
 }
 
 .AmEx {
-    background-position: -1px -200px;
-    width: 63px;
-    height: 58px;
+  background-position: -1px -200px;
+  width: 63px;
+  height: 58px;
 }
 
 .Discover {
-    background-position: -451px 0;
-    width: 108px;
-    height: 83px;
+  background-position: -451px 0;
+  width: 108px;
+  height: 83px;
 }
 
 .EMS {
-    background-position: -101px -200px;
-    width: 138px;
-    height: 44px;
+  background-position: -101px -200px;
+  width: 138px;
+  height: 44px;
 }
 
 .fedex-logo {
-    background-position: -151px -100px;
-    width: 139px;
-    height: 51px;
+  background-position: -151px -100px;
+  width: 139px;
+  height: 51px;
 }
 
 .JPPost {
-    background-position: 0 -100px;
-    width: 100px;
-    height: 70px;
+  background-position: 0 -100px;
+  width: 100px;
+  height: 70px;
 }
 
 .mastercard-logo {
-    background-position: -351px 0;
-    width: 84px;
-    height: 51px;
+  background-position: -351px 0;
+  width: 84px;
+  height: 51px;
 }
 
 .Paypal {
-    background-position: -301px -100px;
-    width: 149px;
-    height: 77px;
+  background-position: -301px -100px;
+  width: 149px;
+  height: 77px;
 }
 
 .Stripe {
-    background-position: -251px 0;
-    width: 84px;
-    height: 35px;
+  background-position: -251px 0;
+  width: 84px;
+  height: 35px;
 }
 
 .Verisign {
-    background-position: -101px 0;
-    width: 97px;
-    height: 50px;
+  background-position: -101px 0;
+  width: 97px;
+  height: 50px;
 }
 
 .Visa {
-    background-position: -1px 0;
-    width: 93px;
-    height: 29px;
+  background-position: -1px 0;
+  width: 93px;
+  height: 29px;
 }
 
-
 h1, h2, h3, h4, h5 {
-    font-family: 'Open Sans',sans-serif;
-    font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
 }
 
 div.package-forwarding-section {
-    padding-top: 25px;
-    padding-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .gallery-container {
- display: flex;
- justify-content: center;
- flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .gallery-inner-rows {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-a#cta {
-  background-color: #eee ;
-  color: @green ;
-  &:hover, &:focus {
-  background-color: #fff;
+//a#cta {
+//  background-color: #f37621;
+//  color: #FFFFFF;
+//  margin: 0;
+//  &:hover, &:focus {
+//    background-color: #B6631B;
+//  }
+//}
 
+//.ui.items>.item>.content>.header:not(.ui) {
+//color: @green;
+//}
+
+/* Contextual Backgrounds */
+
+.background-green {
+  background-color: @green;
+}
+
+.background-blue {
+  background-color: #253c44;
+}
+
+.background-grey {
+  background-color: #edeff1;
+}
+
+/* Contextual Colors */
+
+.text-green {
+  color: #4bc251 !important;
+}
+
+.text-blue {
+  color: #253c44 !important;
+}
+
+.text-grey {
+  color: #edeff1 !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+/* Contextual Sizes */
+
+.text-huge {
+  font-size: 6em;
+  line-height: initial;
+}
+
+.text-large {
+  font-size: 4em;
+  line-height: initial;
+}
+
+.text-medium {
+  font-size: 2em;
+  line-height: initial;
+}
+
+@media (max-height: 767px) {
+  .text-medium {
+    font-size: 1.4em;
   }
+}
+
+/* Contextual Font Weights */
+
+.text-heavy {
+  font-weight: 600;
+}
+
+.text-light {
+  font-weight: 200;
+}
+
+/* Text Alignment */
+
+@media (max-width: 767px) {
+  .center-mobile {
+    text-align: center !important;
+  }
+}
+
+/* Misc */
+
+.map-background {
+  background-image: url("../img/Map.png");
+  background-repeat: repeat-y;
+  background-position: center center;
+  width: 100%;
+}
+
+.map-background h1 {
+  font-size: 32pt;
+  padding: 50px 0;
+}
+
+@media (max-width: 991px) {
+  .map-background h1 {
+    font-size: 28pt;
+  }
+}
+
+blockquote {
+  font-weight: 300;
+}
+
+/* Logo */
+
+.logo img {
+  max-height: 40px;
+}
+
+/* Screens */
+
+.screen img {
+  width: 100%;
+  max-width: 550px;
+}
+
+/* Mobile Menu */
+
+#mobile-menu .item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Buttons */
+
+#get-started,
+#get-started-foot {
+  padding: 20px 50px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+
+.footer-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu a {
+  color: #fff;
+}
+
+nav > a {
+  padding: 0 15px;
+}
+
+.column {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+#slider .slick-slide img {
+  display: inline;
+}
+
+#slider ul.slick-dots {
+  text-align: center;
+}
+
+#slider ul.slick-dots li {
+  display: inline;
+  position: relative;
+  left: -30px;
+  cursor: pointer;
+}
+
+#slider ul.slick-dots li button {
+  visibility: hidden;
+}
+
+#slider ul.slick-dots li:after {
+  content: "\25e6";
+  font-size: 3em;
+}
+
+#slider ul.slick-dots li.slick-active:after {
+  content: "\2022";
+}
+
+#main-head {
+  font-weight: 200;
+}
+
+body > .section:first-of-type {
+  margin-top: -40px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#money_back_guarantee_section {
+  margin-top: -30px;
 }

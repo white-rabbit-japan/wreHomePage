@@ -1,8 +1,10 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
+    <!-- Standard Meta -->
     <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
     <title>White Rabbit Express - Japan's Buying Service</title>
     <meta name=viewport content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
@@ -81,12 +83,28 @@
             s.parentNode.insertBefore(p, s);
         })();
     </script>
+
+
+    <!--<script src="vendor/chartist/chartist.js"></script>-->
+    <!--<script src="vendor/chartist/chartist-fill-plugin-donut.js"></script>-->
+
+    <link rel="stylesheet" type="text/css" href="vendor/chartist/chartist.min.css"/>
+
+    <style>
+        [data-sr] {
+            visibility: hidden;
+        }
+    </style>
+
 </head>
 <body>
+<script src="vendor/scrollReveal.js"></script>
+
 
 <div class="section background-green text-white">
     <div class="ui container">
         <header>
+
             <div class="ui mobile only two column grid">
                 <div class="column center aligned">
                     <div class="logo center aligned">
@@ -117,7 +135,7 @@
                 </div>
                 <div class="four wide computer only four wide tablet only column center aligned">
                     <div class="logo center aligned">
-                        <img src="img/wrelogo.png" alt="White Rabbit Ventures, Inc."/>
+                        <img data-sr="enter top" src="img/wrelogo.png" alt="White Rabbit Ventures, Inc."/>
                     </div>
                 </div>
                 <div class="six wide computer only six wide tablet only column center aligned">
@@ -139,7 +157,7 @@
                     <h1 id="main-head">Buy from Japan. Easier than ever.</h1>
 
                     <p class="text-medium">Shop any store &mdash; we'll buy and ship the items to you.</p>
-                    <a href="https://my.whiterabbitexpress.com" id="cta" class="ui huge white button">Get a
+                    <a href="https://my.whiterabbitexpress.com" id="cta" data-sr="" class="ui yellow huge button">Get a
                         quote &mdash;
                         instantly</a>
 
@@ -149,15 +167,19 @@
 
             <div class="ui row">
 
-                <div class="four wide computer eight wide tablet sixteen wide phone center aligned column">
-                    <img src="img/bell-icon.png" alt="Bell Icon" class="icon bell-icon"/>
+                <div
+                        class="four wide computer eight wide tablet sixteen wide phone center aligned column">
+                    <img data-sr="over 0.4s roll 360deg scale up 80 %" src="img/bell-icon.png" alt="Bell Icon"
+                         class="icon bell-icon"/>
                     <h5>Fast, Friendly Assistance</h5>
 
                     <p>Real-time support from live humans.</p>
                 </div>
 
-                <div class="four wide computer eight wide tablet sixteen wide phone center aligned column">
-                    <img src="img/wallet-icon.png" alt="Wallet Icon" class="icon wallet-icon"/>
+                <div
+                        class="four wide computer eight wide tablet sixteen wide phone center aligned column">
+                    <img data-sr="over 0.6s roll 360deg scale up 80 %" src="img/wallet-icon.png" alt="Wallet Icon"
+                         class="icon wallet-icon"/>
                     <h5>Transparent Pricing</h5>
 
                     <p>No Deposit. No Hidden Fees.</p>
@@ -169,8 +191,9 @@
 
                 <!--<p>Receive email alerts when your order status is updated.</p>-->
                 <!--</div>-->
-                <div class="four wide computer eight wide tablet sixteen wide phone center aligned column">
-                    <img src="img/money-bag-icon.png" alt="Money Bag Icon"
+                <div
+                        class="four wide computer eight wide tablet sixteen wide phone center aligned column">
+                    <img data-sr="over 0.8s roll 360deg scale up 80 %" src="img/money-bag-icon.png" alt="Money Bag Icon"
                          class="icon money-bag-icon"/>
                     <h5>Money-back Guarantee</h5>
 
@@ -206,50 +229,235 @@
     </div>
 </div>
 
-<div class="section" id="features_section">
+
+<div class="section" id="features">
     <div class="ui container">
         <div class="ui one column grid">
             <div class="center aligned column">
-                <h2>Features You're Going to Love</h2>
+                <h2>Why Choose White Rabbit Express?</h2>
 
-                <p id="feature_subtitle">Our world-class support is backed by a world-class platform.</p>
+                <p id="feature_subtitle">Valuable features. World-class support.</p>
                 <img src="img/green-squiggle.png" alt="Green Squiggle"/>
             </div>
         </div>
-        <div class="ui grid" id="features">
-            <div class="screen eight wide tablet eight wide computer sixteen wide mobile column">
-                <img src="img/instantQuote.png" alt=""/>
 
-                <h3>Get a quote, instantly</h3>
+        <div class="ui column grid centered" id="features">
+            <!--<div class="screen sixteen wide tablet two wide computer six wide mobile column">-->
+            <!--<img src="img/dashboard.png" alt=""/>-->
+            <!--<div class="ui very padded segment">-->
+            <!--<div class="ct-chart ct-perfect-fourth">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
 
-                <p>No hidden fees. No delays. Our quotes are calculated for you automatically.</p>
+            <div class="screen sixteen wide tablet five wide computer sixteen wide center-mobile column">
+
+                <div class="ui relaxed items">
+                    <div data-sr="wait 0.2s, scale up 30%" class="item">
+                        <div class="content">
+                            <i class="green check icon"></i>
+
+                            <div class="header">Unbeatable Personal
+                                Assistance
+                            </div>
+
+                            <div class="description">
+                                <p>We treat everyone like a VIP.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div data-sr="wait 0.4s, scale up 25%" class="item">
+                        <div class="content">
+                            <i class="green check icon"></i>
+
+                            <div class="header">Free Consolidation</div>
+
+                            <div class="description">
+
+                                <p>Consolidate buying-service packages for free.</p>
+
+                                <p></p>
+                            </div>
+                            <div class="extra">
+                                <!--<i class="green check icon"></i>-->
+                                Does not apply to package forwarding.
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sr="wait 0.6s, scale up 20%" class="item">
+                        <div class="content">
+                            <i class="green check icon"></i>
+
+                            <div class="header">Free Repacking</div>
+
+                            <div class="description">
+
+                                <p>No box fee. Free repacking for international shipping.</p>
+                            </div>
+                            <div class="extra">
+                                Additional costs may apply to large or heavy items.
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sr="wait 0.8s, scale up 15%" class="item">
+                        <div class="content">
+                            <i class="green check icon"></i>
+
+                            <div class="header">Buy from any shop</div>
+
+                            <div class="description">
+                                <p>Shop any store in Japan. In-store pick-up OK!</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-sr="wait 1.0s, scale up 10%" class="item">
+                        <div class="content">
+                            <i class="green check icon"></i>
+
+                            <div class="header">Transparent Pricing</div>
+
+                            <div class="description">
+                                <p>No deposit. No hidden fees.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="screen eight wide tablet eight wide computer sixteen wide mobile column">
-                <img src="img/dashboard.png" alt=""/>
-
-                <h3>Your Dashboard</h3>
-
-                <p>See an overview of your orders and shipments all in one place.</p>
+            <div class="screen zero wide tablet one wide computer zero wide mobile column">
             </div>
-            <div class="screen eight wide tablet eight wide computer sixteen wide mobile column">
-                <img src="img/orderstatus.png" alt=""/>
+            <div class="screen sixteen wide tablet five wide computer sixteen wide center-mobile column">
+                <div class="ui relaxed items">
+                    <div data-sr="wait 0.2s, scale up 30%" class="item">
+                        <div class="content">
+                            <i class="green check icon"></i>
 
-                <h3>Real-time Order Status</h3>
+                            <div class="header">Live Chat</div>
+                            <!--<a><i class="grey arrow circle right icon"></i></a>-->
 
-                <p>Order status updates in real-time as your order is being processed.</p>
-            </div>
-            <div class="screen eight wide tablet eight wide computer sixteen wide mobile column">
-                <img src="img/mailbox.png" alt=""/>
 
-                <h3>Your Packages</h3>
+                            <div class="description">
+                                <p>Live chat with real humans.</p>
 
-                <p>See what packages have arrived. Choose to ship things together.</p>
+
+                            </div>
+                            <div class="extra">
+                                Customer service agents online during business hours in Japan.
+                            </div>
+                        </div>
+                    </div>
+                    <div data-sr="wait 0.4s, scale up 25%" class="item">
+                        <div class="content">
+                            <i class="green check icon"></i>
+
+                            <div class="header">Real-time Order Status</div>
+
+                            <div class="description">
+
+                                <p>Order status updates in real-time.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-sr="wait 0.6s, scale up 20%" class="item">
+                        <div class="content">
+                            <i class="green check icon"></i>
+
+                            <div class="header">Pre-order and Pre-Release</div>
+
+                            <div class="description">
+
+                                <p>We can handle pre-order and pre-release items.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div data-sr="wait 0.8s, scale up 15%" class="item">
+                        <div class="content">
+                            <i class="green check icon"></i>
+
+                            <div class="header">Mobile-Friendly</div>
+
+
+                            <div class="description">
+                                <p>Create orders and ship packages on the go.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-sr="wait 1s, scale up 10%" class="item">
+                        <div class="content">
+                            <i class="green check icon"></i>
+
+                            <div class="header">100% Moneyback Guarantee</div>
+
+
+                            <div class="description">
+                                <p>If we can't buy you item, you get a full-refund.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
+
+<!--<div class="section" id="features_section">-->
+<!--<div class="ui container">-->
+<!--<div class="ui one column grid">-->
+<!--<div class="center aligned column">-->
+<!--<h2>Features You're Going to Love</h2>-->
+
+<!--<p id="feature_subtitle">Our world-class support is backed by a world-class platform.</p>-->
+<!--<img src="img/green-squiggle.png" alt="Green Squiggle"/>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="ui grid" id="features">-->
+<!--<div class="screen eight wide tablet eight wide computer sixteen wide mobile column">-->
+<!--<img src="img/instantQuote.png" alt=""/>-->
+
+<!--<h3>Get a quote, instantly</h3>-->
+
+<!--<p>No hidden fees. No delays. Our quotes are calculated for you automatically.</p>-->
+<!--</div>-->
+<!--<div class="screen eight wide tablet eight wide computer sixteen wide mobile column">-->
+<!--<img src="img/dashboard.png" alt=""/>-->
+
+<!--<h3>Your Dashboard</h3>-->
+
+<!--<p>See an overview of your orders and shipments all in one place.</p>-->
+<!--</div>-->
+<!--<div class="screen eight wide tablet eight wide computer sixteen wide mobile column">-->
+<!--<img src="img/orderstatus.png" alt=""/>-->
+
+<!--<h3>Real-time Order Status</h3>-->
+
+<!--<p>Order status updates in real-time as your order is being processed.</p>-->
+<!--</div>-->
+<!--<div class="screen eight wide tablet eight wide computer sixteen wide mobile column">-->
+<!--<img src="img/mailbox.png" alt=""/>-->
+
+<!--<h3>Your Packages</h3>-->
+
+<!--<p>See what packages have arrived. Choose to ship things together.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 <div class="section background-grey" id="shipping_methods_section">
-    <div class="ui container">
+    <div data-sr="" class="ui container">
         <div class="ui centered grid">
             <div class="six wide computer sixteen wide tablet sixteen wide mobile column center aligned text-medium"
                  id="shipping_methods_title">
@@ -268,7 +476,7 @@
 </div>
 
 <div class="section" id="money_back_guarantee_section">
-    <div class="ui container">
+    <div data-sr="" class="ui container">
         <div class="ui centered grid">
             <div class="screen sixteen wide computer sixteen wide tablet twelve wide mobile column center aligned"
                  id="money_back_guarantee">
@@ -286,35 +494,36 @@
     <div class="ui">
         <div class="gallery-container">
 
-            <a href="http://cms.whiterabbitexpress.com" target="_blank"><img class="" height="250px" width="289px"
-                                                                             src="img/gallery/home-now-shopping_01.jpg"/></a>
+            <a href="http://cms.whiterabbitexpress.com" target="_blank">
+                <img class="sr-gallery-img" height="250px" width="289px"
+                     src="img/gallery/home-now-shopping_01.jpg"/></a>
 
             <a href="http://cms.whiterabbitexpress.com/bilbao-bags-from-issey-miyakes-new-bao-bao-brand/"
-               target="_blank"><img
-                    class="" height="250px" width="315px"
-                    src="img/gallery/home-now-shopping_02.jpg"/></a>
+               target="_blank">
+                <img class="sr-gallery-img" height="250px" width="315px"
+                     src="img/gallery/home-now-shopping_02.jpg"/></a>
 
             <div class="gallery-inner-rows">
-                <a href="http://cms.whiterabbitexpress.com/greenmarker-grass-bookmark/" target="_blank"><img class=""
-                                                                                                             src="img/gallery/home-now-shopping_03.jpg"/></a>
-                <a href="http://cms.whiterabbitexpress.com/mokurokku-wooden-toy-bricks/" target="_blank"><img class=""
-                                                                                                              src="img/gallery/home-now-shopping_06.jpg"/></a>
+                <a href="http://cms.whiterabbitexpress.com/greenmarker-grass-bookmark/" target="_blank">
+                    <img class="sr-gallery-img" src="img/gallery/home-now-shopping_03.jpg"/></a>
+                <a href="http://cms.whiterabbitexpress.com/mokurokku-wooden-toy-bricks/" target="_blank">
+                    <img class="sr-gallery-img" src="img/gallery/home-now-shopping_06.jpg"/></a>
             </div>
             <div class="gallery-inner-rows">
-                <a href="http://cms.whiterabbitexpress.com/mewgaroo-hoodie-with-pet-pouch-uni-habitat/" target="_blank"><img
-                        class="" src="img/gallery/home-now-shopping_04.jpg"/></a>
-                <a href="http://cms.whiterabbitexpress.com/rihga-planetary-chocolates/" target="_blank"><img class=""
-                                                                                                             src="img/gallery/home-now-shopping_07.jpg"/></a>
+                <a href="http://cms.whiterabbitexpress.com/mewgaroo-hoodie-with-pet-pouch-uni-habitat/" target="_blank">
+                    <img class="sr-gallery-img" src="img/gallery/home-now-shopping_04.jpg"/></a>
+                <a href="http://cms.whiterabbitexpress.com/rihga-planetary-chocolates/" target="_blank">
+                    <img class="sr-gallery-img" src="img/gallery/home-now-shopping_07.jpg"/></a>
             </div>
-            <a href="http://cms.whiterabbitexpress.com/?s=sailor+moon" target="_blank"><img class=""
-                                                                                            src="img/gallery/home-now-shopping_05.jpg"/></a>
+            <a href="http://cms.whiterabbitexpress.com/?s=sailor+moon" target="_blank">
+                <img class="sr-gallery-img" src="img/gallery/home-now-shopping_05.jpg"/></a>
 
         </div>
     </div>
 </div>
 
 <div class="section" id="payment_section">
-    <div class="ui container">
+    <div data-sr="" class="ui container">
         <div class="ui one column grid">
             <div class="column center aligned">
                 <h2>Flexible, Secure Payment Options</h2>
@@ -337,7 +546,7 @@
 </div>
 
 <div class="section background-grey map-background" id="trusted_by_section">
-    <div class="ui container">
+    <div data-sr="" class="ui container">
         <div class="ui centered grid">
             <div class="sixteen wide computer fourteen wide tablet fourteen wide mobile center aligned column">
                 <h1 class="text-green">Trusted by more than 50,000 people in over 100 countries</h1>
@@ -347,7 +556,7 @@
 </div>
 
 <div class="section background-green text-white" id="quotes_section">
-    <div class="ui container">
+    <div data-sr="" class="ui container">
         <div id="slider">
 
             <div class="ui centered grid">
@@ -426,8 +635,9 @@
         </div>
     </div>
 </div>
+
 <div class="section" id="get_started_section">
-    <div class="ui container">
+    <div data-sr="" class="ui container">
         <div class="ui centered grid">
             <div class="screen fourteen wide column center aligned">
                 <h2>Experience the benefits of White Rabbit Express.</h2>
@@ -440,7 +650,7 @@
     </div>
 </div>
 <div class="section background-green">
-    <div class="ui container">
+    <div data-sr="" class="ui container">
         <div class="ui one column grid">
             <div class="column center aligned">
                 <h3 class="text-white">AS SEEN ON</h3>
@@ -471,6 +681,7 @@
         </div>
     </div>
 </div>
+
 <footer class="section background-blue text-white">
     <div class="ui container">
         <div class="ui grid">
@@ -480,8 +691,9 @@
                 </div>
             </div>
             <div class="ui row">
-                <div class="four wide computer only column">
-                    <img src="img/wrelogo.png" alt="White Rabbit Ventures, Inc."/>
+                <div data-sr="enter bottom, hustle, move 80px" class="four wide computer only column">
+                    <img src="img/wrelogo.png"
+                         alt="White Rabbit Ventures, Inc."/>
 
                     <p>
                         <strong>Proudly Made in Japan</strong> <br/>
@@ -489,7 +701,8 @@
                         Design by FHOKE
                     </p>
                 </div>
-                <div class="eight wide mobile four wide tablet four wide computer column">
+                <div data-sr="enter bottom, hustle, move 80px"
+                     class="eight wide mobile four wide tablet four wide computer column">
                     <h5>COMPANY INFO</h5>
                     <ul class="footer-menu">
                         <li><a href="http://support.whiterabbitexpress.com/article/65-testimonials">Testimonials</a>
@@ -503,7 +716,8 @@
 
                     </ul>
                 </div>
-                <div class="eight wide mobile four wide tablet four wide computer column">
+                <div data-sr="enter bottom, hustle, move 80px"
+                     class="eight wide mobile four wide tablet four wide computer column">
                     <h5>CONNECT WITH US</h5>
                     <ul class="footer-menu">
                         <li><a href="http://support.whiterabbitexpress.com">Help & Support</a></li>
@@ -514,7 +728,8 @@
 
                     </ul>
                 </div>
-                <div class="eight wide mobile four wide tablet four wide computer column">
+                <div data-sr="enter bottom, hustle, move 80px"
+                     class="eight wide mobile four wide tablet four wide computer column">
                     <h5>SISTER COMPANIES</h5>
                     <ul class="footer-menu">
                         <li><a href="http://shop.whiterabbitjapan.com">White Rabbit Japan Shop</a></li>
@@ -629,6 +844,99 @@
         automaticLanguageChange();
     })();
 
+</script>
+
+
+<!--<script>-->
+
+<!--var chart = new Chartist.Pie('.ct-chart',-->
+<!--{-->
+<!--series: [97, 2.5, 0.5],-->
+<!--labels: ['Great', '', '']-->
+<!--}, {-->
+<!--donut: true,-->
+<!--donutWidth: 20,-->
+<!--startAngle: 0,-->
+<!--total: 100,-->
+<!--showLabel: false,-->
+<!--plugins: [-->
+<!--Chartist.plugins.fillDonut({-->
+<!--items: [{-->
+<!--content: '',-->
+<!--position: 'bottom',-->
+<!--offsetY: 10,-->
+<!--offsetX: -2-->
+<!--}, {-->
+<!--content: '<h3 class="text-green">Customer<br>Happiness</h3>'-->
+<!--}]-->
+<!--})-->
+<!--],-->
+<!--});-->
+
+<!--chart.on('draw', function (data) {-->
+<!--if (data.type === 'slice' && data.index == 0) {-->
+<!--// Get the total path length in order to use for dash array animation-->
+<!--var pathLength = data.element._node.getTotalLength();-->
+<!--// Set a dasharray that matches the path length as prerequisite to animate dashoffset-->
+<!--data.element.attr({-->
+<!--'stroke-dasharray': pathLength + 'px ' + pathLength + 'px'-->
+<!--});-->
+<!--// Create animation definition while also assigning an ID to the animation for later sync usage-->
+<!--var animationDefinition = {-->
+<!--'stroke-dashoffset': {-->
+<!--id: 'anim' + data.index,-->
+<!--dur: 1200,-->
+<!--from: -pathLength + 'px',-->
+<!--to: '0px',-->
+<!--easing: Chartist.Svg.Easing.easeOutQuint,-->
+<!--fill: 'freeze'-->
+<!--}-->
+<!--};-->
+<!--// We need to set an initial value before the animation starts as we are not in guided mode which would do that for us-->
+<!--data.element.attr({-->
+<!--'stroke-dashoffset': -pathLength + 'px'-->
+<!--});-->
+<!--// We can't use guided mode as the animations need to rely on setting begin manually-->
+<!--// See http://gionkunz.github.io/chartist-js/api-documentation.html#chartistsvg-function-animate-->
+<!--data.element.animate(animationDefinition, true);-->
+<!--}-->
+<!--});-->
+
+<!--</script>-->
+
+
+<script>
+
+    //    var defaults = {
+    //
+    //        enter: 'top',
+    //        move: '8px',
+    //        over: '2.6s',
+    //        wait: '0s',
+    //        easing: 'ease',
+    //
+    //        scale: {direction: 'up', power: '5%'},
+    //        rotate: {x: 0, y: 0, z: 0},
+    //
+    //        opacity: 0,
+    //        mobile: false,
+    //        reset: false,
+    //    }
+
+    var config = {
+
+        reset: true,
+    }
+
+    window.sr = new scrollReveal(config);
+    $(function () {
+//        $(".container").attr('data-sr', '');
+        $(".sr-gallery-img").attr('data-sr', 'wait 0.2s, scale up 20%');
+
+        sr.init();
+    });
+
+    sr.init();
 </script>
 </body>
 </html>

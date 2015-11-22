@@ -1,5 +1,5 @@
 /*!
- * # Semantic UI 2.1.4 - Segment
+ * # Semantic UI 2.1.6 - Segment
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -75,7 +75,8 @@
 
 /* Grid */
 .ui.page.grid.segment,
-.ui.grid .ui.segment.column {
+.ui.grid > .row > .ui.segment.column,
+.ui.grid > .ui.segment.column {
   padding-top: 2em;
   padding-bottom: 2em;
 }
@@ -377,6 +378,11 @@
   box-shadow: none;
   border-left: 1px solid rgba(34, 36, 38, 0.15);
 }
+
+/* Border Fixes */
+.ui.segments > .horizontal.segments:first-child {
+  border-top: none;
+}
 .ui.horizontal.segments > .segment:first-child {
   border-left: none;
 }
@@ -407,7 +413,7 @@
   text-shadow: none !important;
   color: transparent !important;
   -webkit-transition: all 0s linear;
-          transition: all 0s linear;
+  transition: all 0s linear;
 }
 .ui.loading.segment:before {
   position: absolute;
