@@ -1026,6 +1026,10 @@ body > .section:first-of-type {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+#money_back_guarantee_section {
+  margin-top: -30px;
+}
 /*!
  * # Semantic UI 2.1.6 - Button
  * http://github.com/semantic-org/semantic-ui/

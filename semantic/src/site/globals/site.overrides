@@ -347,3 +347,7 @@ body > .section:first-of-type {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+#money_back_guarantee_section {
+  margin-top: -30px;
+}
