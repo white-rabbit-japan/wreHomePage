@@ -147,14 +147,14 @@ div.package-forwarding-section {
   flex-direction: column;
 }
 
-a#cta {
-  background-color: #eee;
-  color: @green;
-  margin: 0;
-  &:hover, &:focus {
-    background-color: #fff;
-  }
-}
+//a#cta {
+//  background-color: #f37621;
+//  color: #FFFFFF;
+//  margin: 0;
+//  &:hover, &:focus {
+//    background-color: #B6631B;
+//  }
+//}
 
 //.ui.items>.item>.content>.header:not(.ui) {
 //color: @green;
@@ -346,4 +346,8 @@ body > .section:first-of-type {
 .section {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+#money_back_guarantee_section {
+  margin-top: -30px;
 }

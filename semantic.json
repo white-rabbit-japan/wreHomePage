@@ -30,6 +30,7 @@
     "list",
     "grid",
     "menu",
-    "item"
+    "item",
+    "segment"
   ]
 }
