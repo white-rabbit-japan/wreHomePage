@@ -351,3 +351,23 @@ body > .section:first-of-type {
 #money_back_guarantee_section {
   margin-top: -30px;
 }
+
+#quotes_section .description {
+  font-size: 16px;
+  p {
+    line-height: 1.5em;
+
+  }
+}
+
+#quotes_section .header {
+  display: block;
+  text-align: center;
+  font-size: 1.2;
+  margin-top: 12px;
+  a {
+ 
+    text-decoration: underline;
+  }
+}
+
