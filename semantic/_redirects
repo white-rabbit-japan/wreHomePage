@@ -3,5 +3,6 @@
 # Rewrite a path
 /zh zh/index.html    200
 
+
 # Rewrite a path
 /* http://cms.whiterabbitexpress.com/:splat 301
