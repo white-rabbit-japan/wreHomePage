@@ -242,7 +242,7 @@ div.package-forwarding-section {
   width: 100%;
 }
 
-.map-background h1 {
+.map-background h3 {
   font-size: 32pt;
   padding: 50px 0;
 }
@@ -371,3 +371,9 @@ body > .section:first-of-type {
   }
 }
 
+.section_heading {
+font-size: 2.3rem;
+    line-height: 1.2857em;
+    margin: calc(2rem - .14285em) 0 1rem;
+    padding: 0;
+}

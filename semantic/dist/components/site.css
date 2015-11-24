@@ -371,7 +371,7 @@ div.package-forwarding-section {
   background-position: center center;
   width: 100%;
 }
-.map-background h1 {
+.map-background h3 {
   font-size: 32pt;
   padding: 50px 0;
 }
@@ -474,4 +474,10 @@ body > .section:first-of-type {
 }
 #quotes_section .header a {
   text-decoration: underline;
+}
+.section_heading {
+  font-size: 2.3rem;
+  line-height: 1.2857em;
+  margin: calc(1.85715rem) 0 1rem;
+  padding: 0;
 }

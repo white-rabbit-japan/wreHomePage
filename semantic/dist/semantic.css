@@ -921,7 +921,7 @@ div.package-forwarding-section {
   width: 100%;
 }
 
-.map-background h1 {
+.map-background h3 {
   font-size: 32pt;
   padding: 50px 0;
 }
@@ -1048,6 +1048,13 @@ body > .section:first-of-type {
 
 #quotes_section .header a {
   text-decoration: underline;
+}
+
+.section_heading {
+  font-size: 2.3rem;
+  line-height: 1.2857em;
+  margin: calc(1.85715rem) 0 1rem;
+  padding: 0;
 }
 /*!
  * # Semantic UI 2.1.6 - Button
@@ -1337,9 +1344,7 @@ body > .section:first-of-type {
 .ui.vertical.animated.button .visible.content,
 .ui.vertical.animated.button .hidden.content {
   -webkit-transition: top 0.3s ease, -webkit-transform 0.3s ease;
-  transition: top 0.3s ease, -webkit-transform 0.3s ease;
   transition: top 0.3s ease, transform 0.3s ease;
-  transition: top 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .ui.vertical.animated.button .visible.content {
@@ -1374,9 +1379,7 @@ body > .section:first-of-type {
 .ui.fade.animated.button .visible.content,
 .ui.fade.animated.button .hidden.content {
   -webkit-transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
-  transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
   transition: opacity 0.3s ease, transform 0.3s ease;
-  transition: opacity 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .ui.fade.animated.button .visible.content {
