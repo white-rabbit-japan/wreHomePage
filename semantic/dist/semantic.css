@@ -912,6 +912,12 @@ div.package-forwarding-section {
   }
 }
 
+@media (max-width: 991px) {
+  .center-tablet {
+    text-align: center !important;
+  }
+}
+
 /* Misc */
 
 .map-background {
