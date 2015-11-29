@@ -117,6 +117,26 @@
 
 </head>
 <body>
+<div class="sale-banner" style="
+    width: 100%;
+    height: 60px;
+    background: radial-gradient(black 15%, transparent 16%) 0 0,  radial-gradient(black 15%, transparent 16%) 8px 8px,  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+    color: #fff;">
+  <div class="sale-banner-text" style="
+    width: 100%;
+    font-size: 20px;
+    color: deepskyblue;
+    line-height: 60px;
+    margin: 0 auto;
+    text-align: center;">Today only, <strong>50% off service fees</strong> ・ <span id="countdown">Offer ends in <strong>6h
+    27m
+    10s</strong>
+  </span>
+  </div>
+</div>
+
 <script src="vendor/scrollReveal.js"></script>
 
 <div class="section background-green text-white">
@@ -853,7 +873,7 @@
     suffix: ''
   };
 
-  var numAnim = new CountUp("customer-count", 0, 50000, 0, 2.5, options);
+  var numAnim = new CountUp("customer-count", 0, 50000, 0, 2, options);
 
   var inview = new Waypoint.Inview({
     element: $('.counter')[0],
@@ -862,6 +882,21 @@
     },
   })
 
+</script>
+
+<script>
+  var endTime = new Date(2015, 11, 28).getTime() / 1000;
+  function setClock() {
+    var elapsed = new Date().getTime() / 1000;
+    var totalSec = endTime - elapsed;
+    var h = parseInt(totalSec / 3600) % 48;
+    var m = parseInt(totalSec / 60) % 60;
+    var s = parseInt(totalSec % 60, 10);
+    var result = "Offer ends in <strong>" + h + "h " + m + "m " + s + "s</strong>";
+    $('#countdown').html(result);
+    setTimeout(setClock, 1000);
+  }
+  setClock();
 </script>
 
 </body>
