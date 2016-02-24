@@ -1037,6 +1037,10 @@ body > .section:first-of-type {
   margin-top: -30px;
 }
 
+ #twitter_feed_section {
+   margin-top: -30px;
+ }
+
 #quotes_section .description {
   font-size: 16px;
 }
