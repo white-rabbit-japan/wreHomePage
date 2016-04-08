@@ -287,6 +287,10 @@ blockquote {
 
 /* Buttons */
 
+.ui.button .btn-shadow {
+    box-shadow: 0 6px #ab3c3c;
+}
+
 #get-started,
 #get-started-foot {
   padding: 20px 50px;

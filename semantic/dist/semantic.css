@@ -964,6 +964,10 @@ blockquote {
 
 /* Buttons */
 
+.ui.button .btn-shadow {
+  box-shadow: 0 6px #ab3c3c;
+}
+
 #get-started,
 #get-started-foot {
   padding: 20px 50px;
@@ -1036,10 +1040,6 @@ body > .section:first-of-type {
 #money_back_guarantee_section {
   margin-top: -30px;
 }
-
- #twitter_feed_section {
-   margin-top: -30px;
- }
 
 #quotes_section .description {
   font-size: 16px;
