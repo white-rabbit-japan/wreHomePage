@@ -287,9 +287,15 @@ blockquote {
 
 /* Buttons */
 
-.ui.button .btn-shadow {
-    box-shadow: 0 6px #ab3c3c;
+.ui.yellow.button.btn-shadow {
+    box-shadow: 0 6px #B98A00;
 }
+
+.ui.yellow.button.btn-shadow:hover {
+    box-shadow: 0 4px #B98A00;
+    top: 2px;
+}
+
 
 #get-started,
 #get-started-foot {
