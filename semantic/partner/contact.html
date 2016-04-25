@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <title>White Rabbit Japan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Kimberly Sta. Maria Dalton">
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/general.css" rel="stylesheet">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.8/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("#form").validate();
+    });
+    </script>
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="header2">
+    <div class="container">
+        <div class="row" style="padding-top:100px;">
+            <div class="span12">
+                <h1 class="featured">ご質問、ご相談、お問い合わせ</h2>
+                
+            </div>
+        </div>
+    </div>
+</div><!-- end header div ->
+<!-- Beginning of Benefits Block-->
+<div id="subheader" style="border-bottom: 1px solid #eee; padding: 40px 0;">
+<section id="contact">
+    <div class="container">
+        <div class="span10 offset1">
+            <!--h2>ご質問、ご相談、お問い合わせ</h2-->
+                <p><a style="color:green; float:right;" href="index.html"> << トップページへ戻る </a></p>
+            <h3>お問合わせフォーム</h3>
+        </div>
+        <div class="span10 offset1">
+        <p>弊社へのお問い合わせを以下より承ります。必要事項を入力の上、「送信する」ボタンを押してください。
+        <br><span style="color:red">※は必須項目となります。</span></p>
+        <p>下記フォームにて送信できない場合、メールまたはお電話でも受けいたします。
+        <p>代表メールアドレス: <a style="color:green;" href="mailto:help@whiterabbitjapan.com">help@whiterabbitjapan.com</a>
+        <br>電話: 03-6450-7109
+        </div>
+
+
+
+            <div class="span10 offset1 form" style="padding-top:40px;">
+                <form name="contact" action="thank-you" netlify>
+                    <label>
+                       <span style="color:red">※</span> 貴社名
+                    </label>
+                    <input class="textfield required" name="company" id="company" type="text">
+                    <div style="clear:both"></div>
+                    <label>
+                       <span style="color:red">※</span> 氏名
+                    </label>
+                    <input class="textfield required" name="name" id="name" type="text">
+                    <div style="clear:both"></div>
+                    <label>
+                        フリガナ
+                    </label>
+                    <input class="textfield" name="furigana" id="furigana" type="text">
+                    <div style="clear:both"></div>
+                    <label>
+                      <span style="color:red">※</span> メールアドレス
+                    </label>
+                    <input class="textfield required email" name="email" id="email" type="email">
+                    <div style="clear:both"></div>
+                    <label>
+                       電話番号
+                    </label>
+                    <input class="textfield" name="tel" id="tel" type="tel">
+                    <div style="clear:both"></div>
+                    <label>
+                       貴社ウェブサイトURL
+                    </label>
+                    <input class="textfield" name="url" id="url" type="text">
+                    <div style="clear:both"></div>
+                    <label class="fullwidth">
+                        お問い合わせ内容
+                    </label>
+                    <textarea cols="30" rows="8" name="cf_field_5" id="cf_field_5" class="area fldrequired"></textarea>
+                
+                  
+                    <!-- BUTTON -->
+                    <div class="center">
+                    <button>送信する</button>
+                    </div>`
+                    <br clear="all" />
+                    <div class="green form_result_msg" style="width: 100%; text-align: center;"></div>
+                </form>
+            </div>
+        
+    </div>
+</section>
+</div>
+<!-- Beginning of Cases Block -->
+<div class="container" style="padding:50px 0;">
+    <h2>実績紹介</h2>
+    <div class="row">
+        
+        <div class="span4">
+            <div class="well">
+                <h3 style="text-align:center;"><a style="color:#000 !important;" href="kracie.html"><img src="assets/img/companies/kracie_logo_h60.png" /></a></h3>
+            </div>
+        </div>
+
+        <div class="span4">
+            <div class="well">
+                <h3 style="text-align:center;"><a style="color:#000 !important;" href="casio.html"><img src="assets/img/companies/casio_logo_h60.png" /></a></h3>
+            </div>
+        </div>
+
+        <div class="span4">
+            <div class="well">
+                <h3 style="text-align:center;"><a style="color:#000 !important;" href="ask.html"><img src="assets/img/companies/ask_logo_h60.png" /></a></h3>
+            </div>
+        </div>
+        
+    </div>
+         
+</div>
+<div id="footer">
+    <div class="container">
+        <div class="row footer">
+            <div class="span12">       
+            </div>
+        </div>
+    </div>
+</div> <!-- end footer -->
+</body>
+
+</html>
