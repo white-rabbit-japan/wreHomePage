@@ -752,24 +752,26 @@
   var footerCTA = document.getElementById('get-started-foot');
 
   analytics.trackLink(footerCTA, 'Clicked BS CTA', {
-    location: 'heading',
+    location: 'footer',
     text: 'GET STARTED',
     CTA: 'Buying Service Signup',
     category: 'home page',
     type: 'button',
-    pageTitle: document.title
+    pageTitle: document.title,
+    locale: 'en'
 
   });
 
   var cta = document.getElementById('cta');
 
   analytics.trackLink(cta, 'Clicked BS CTA', {
-    location: 'footer',
+    location: 'heading',
     text: 'GET STARTED NOW',
     CTA: 'Buying Service Signup',
     category: 'home page',
     type: 'button',
-    pageTitle: document.title
+    pageTitle: document.title,
+    locale: 'en'
 
   });
 
@@ -782,14 +784,12 @@
     CTA: 'Package Forwarding Signup',
     category: 'home page',
     type: 'button',
-    pageTitle: document.title
+    pageTitle: document.title,
+    locale: 'en'
 
   });
-
-
-
-
 </script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <!--<script src="dist/semantic.min.js"></script>-->
