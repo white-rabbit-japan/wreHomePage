@@ -155,7 +155,7 @@
           </div>
           <div class="item">
 
-            <a href="http://my.whiterabbitexpress.com/dashboard"
+            <a href="http://my.whiterabbitexpress.com/dashboard" id="signin"
                class="ui inverted basic white button">SIGN IN&nbsp;<i class="lock icon"></i></a>
           </div>
         </div>
@@ -749,29 +749,47 @@
 
 <script type="text/javascript">
 
-  var footerCTA = document.getElementById('get-started-foot');
 
-  analytics.trackLink(footerCTA, 'Clicked BS CTA', {
-    location: 'footer',
-    text: 'GET STARTED',
-    CTA: 'Buying Service Signup',
+  var signin = document.getElementById('signin');
+
+  analytics.trackLink(cta, 'Clicked Signin', {
+    location: 'heading',
+    text: 'SIGN IN',
+    CTA: 'Signin',
     category: 'home page',
     type: 'button',
     pageTitle: document.title,
-    locale: 'en'
+    locale: 'en',
+    color: 'white outline',
 
   });
+
 
   var cta = document.getElementById('cta');
 
   analytics.trackLink(cta, 'Clicked BS CTA', {
     location: 'heading',
+    text: 'GET STARTED',
+    CTA: 'Buying Service Signup',
+    category: 'home page',
+    type: 'button',
+    pageTitle: document.title,
+    locale: 'en',
+    color: 'yellow',
+
+  });
+
+  var footerCTA = document.getElementById('get-started-foot');
+
+  analytics.trackLink(footerCTA, 'Clicked BS CTA', {
+    location: 'footer',
     text: 'GET STARTED NOW',
     CTA: 'Buying Service Signup',
     category: 'home page',
     type: 'button',
     pageTitle: document.title,
-    locale: 'en'
+    locale: 'en',
+    color: 'green'
 
   });
 
@@ -785,7 +803,8 @@
     category: 'home page',
     type: 'button',
     pageTitle: document.title,
-    locale: 'en'
+    locale: 'en',
+    color: 'navy'
 
   });
 </script>
