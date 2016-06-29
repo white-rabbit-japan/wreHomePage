@@ -287,15 +287,6 @@ blockquote {
 
 /* Buttons */
 
-.ui.yellow.button.btn-shadow {
-    box-shadow: 0 6px #B98A00;
-}
-
-.ui.yellow.button.btn-shadow:hover {
-    box-shadow: 0 4px #B98A00;
-    top: 2px;
-}
-
 
 #get-started,
 #get-started-foot {
@@ -366,6 +357,10 @@ body > .section:first-of-type {
   padding-bottom: 50px;
 }
 
+div#features {
+  padding-bottom: 0px;
+}
+
 #money_back_guarantee_section {
   margin-top: -30px;
 }
@@ -395,3 +390,4 @@ font-size: 2.3rem;
     margin: calc(2rem - .14285em) 0 1rem;
     padding: 0;
 }
+
