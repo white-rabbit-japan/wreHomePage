@@ -1,5 +1,5 @@
  /*
- * # Semantic UI - 2.1.6
+ * # Semantic UI - 2.2.1
  * https://github.com/Semantic-Org/Semantic-UI
  * http://www.semantic-ui.com/
  *
@@ -9,16 +9,16 @@
  *
  */
 /*!
- * # Semantic UI 2.1.6 - Site
+ * # Semantic UI 2.2.1 - Site
  * http://github.com/semantic-org/semantic-ui/
  *
  *
- * Copyright 2015 Contributors
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
  */
-;(function ( $, window, document, undefined ) {
+
+;(function ($, window, document, undefined) {
 
 $.site = $.fn.site = function(parameters) {
   var
