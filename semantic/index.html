@@ -171,7 +171,7 @@
             </div>
 
             <div class="six wide left aligned column">
-              <a href="https://my.whiterabbitexpress.com" class="ui medium rounded image">
+              <a href="https://my.whiterabbitexpress.com" class="ui medium rounded image" id="summersale" >
                 <img src="img/sale/white-rabbit-express-summer-sale.png">
               </a>
             </div>
@@ -695,6 +695,21 @@
     color: 'yellow',
 
   });
+
+  var summersaleCTA = document.getElementById('summersale');
+
+  analytics.trackLink(summersaleCTA, 'Clicked summersale CTA', {
+    location: 'heading',
+    text: 'Summer Sale',
+    CTA: 'Summer Sale 8%',
+    category: 'home page',
+    type: 'banner',
+    pageTitle: document.title,
+    locale: 'en',
+    color: 'red/yellow',
+
+  });
+
 
   var footerCTA = document.getElementById('get-started-foot');
 
