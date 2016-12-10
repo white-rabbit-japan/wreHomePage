@@ -177,7 +177,7 @@ div.package-forwarding-section {
 /* Contextual Colors */
 
 .text-green {
-  color: #4bc251 !important;
+  color: #00c76b !important;
 }
 
 .text-blue {

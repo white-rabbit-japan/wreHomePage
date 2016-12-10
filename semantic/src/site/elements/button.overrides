@@ -8,7 +8,7 @@ color: #fff;
 }
 
 .ui.button.inverted:hover {
-color: #4bc251;
+color: #00c76b;
 background:white;
 
 }

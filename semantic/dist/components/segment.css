@@ -417,7 +417,7 @@
   text-shadow: none !important;
   color: transparent !important;
   -webkit-transition: all 0s linear;
-          transition: all 0s linear;
+  transition: all 0s linear;
 }
 .ui.loading.segment:before {
   position: absolute;
@@ -543,10 +543,10 @@
 
 /* Green */
 .ui.green.segment:not(.inverted) {
-  border-top: 2px solid #4bc251;
+  border-top: 2px solid #00c76b;
 }
 .ui.inverted.green.segment {
-  background-color: #4bc251 !important;
+  background-color: #00c76b !important;
   color: #fff !important;
 }
 

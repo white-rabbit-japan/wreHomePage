@@ -123,7 +123,7 @@ i.link.icon {
   cursor: pointer;
   opacity: 0.8;
   -webkit-transition: opacity 0.1s ease;
-          transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
 }
 i.link.icon:hover {
   opacity: 1 !important;
@@ -271,14 +271,14 @@ i.inverted.circular.olive.icon {
 
 /* Green */
 i.green.icon {
-  color: #4bc251 !important;
+  color: #00c76b !important;
 }
 i.inverted.green.icon {
   color: #2ECC40 !important;
 }
 i.inverted.bordered.green.icon,
 i.inverted.circular.green.icon {
-  background-color: #4bc251 !important;
+  background-color: #00c76b !important;
   color: #fff !important;
 }
 

@@ -3,7 +3,7 @@
 *******************************/
 
 @primaryColor   : #7CC05A;
-@green            : #4bc251;
+@green            : #00c76b;
 /* @blue            : #253c44; */
 @grey            : #edeff1;
 @white            : #fff;
