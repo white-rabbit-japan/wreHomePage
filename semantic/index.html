@@ -3,16 +3,16 @@
 <head>
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-            'gtm.start': new Date().getTime(), event: 'gtm.js'
-        });
-        var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-        j.async = true;
-        j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        f.parentNode.insertBefore(j, f);
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(), event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-WDRLBX');</script>
     <!-- End Google Tag Manager -->
 
@@ -40,7 +40,6 @@
     ]
   
 }]
-
 
 
 
@@ -76,50 +75,50 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.5.6/slick.css"/>
     <!--segment.io-->
     <script type="text/javascript">
-        !function () {
-            var analytics = window.analytics = window.analytics || [];
-            if (!analytics.initialize)if (analytics.invoked)window.console && console.error && console.error("Segment snippet included twice."); else {
-                analytics.invoked = !0;
-                analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "page", "once", "off", "on"];
-                analytics.factory = function (t) {
-                    return function () {
-                        var e = Array.prototype.slice.call(arguments);
-                        e.unshift(t);
-                        analytics.push(e);
-                        return analytics
-                    }
-                };
-                for (var t = 0; t < analytics.methods.length; t++) {
-                    var e = analytics.methods[t];
-                    analytics[e] = analytics.factory(e)
-                }
-                analytics.load = function (t) {
-                    var e = document.createElement("script");
-                    e.type = "text/javascript";
-                    e.async = !0;
-                    e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
-                    var n = document.getElementsByName("script")[0];
-                    n.parentNode.insertBefore(e, n)
-                };
-                analytics.SNIPPET_VERSION = "3.1.0";
-                analytics.load("oGtVDY4r9p5D5qdGynM2y2jPBJ58sfQU");
-                analytics.page("homepage");
+      !function () {
+        var analytics = window.analytics = window.analytics || [];
+        if (!analytics.initialize)if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+          analytics.invoked = !0;
+          analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "page", "once", "off", "on"];
+          analytics.factory = function (t) {
+            return function () {
+              var e = Array.prototype.slice.call(arguments);
+              e.unshift(t);
+              analytics.push(e);
+              return analytics
             }
-        }();
+          };
+          for (var t = 0; t < analytics.methods.length; t++) {
+            var e = analytics.methods[t];
+            analytics[e] = analytics.factory(e)
+          }
+          analytics.load = function (t) {
+            var e = document.createElement("script");
+            e.type = "text/javascript";
+            e.async = !0;
+            e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+            var n = document.getElementsByName("script")[0];
+            n.parentNode.insertBefore(e, n)
+          };
+          analytics.SNIPPET_VERSION = "3.1.0";
+          analytics.load("oGtVDY4r9p5D5qdGynM2y2jPBJ58sfQU");
+          analytics.page("homepage");
+        }
+      }();
     </script>
     <!--.segment-->
     <!--auto-detect language-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
     <script>
-        var _prum = [['id', '55c026d6abe53daa13356708'],
-            ['mark', 'firstbyte', (new Date()).getTime()]];
-        (function () {
-            var s = document.getElementsByTagName('script')[0]
-                    , p = document.createElement('script');
-            p.async = 'async';
-            p.src = '//rum-static.pingdom.net/prum.min.js';
-            s.parentNode.insertBefore(p, s);
-        })();
+      var _prum = [['id', '55c026d6abe53daa13356708'],
+        ['mark', 'firstbyte', (new Date()).getTime()]];
+      (function () {
+        var s = document.getElementsByTagName('script')[0]
+          , p = document.createElement('script');
+        p.async = 'async';
+        p.src = '//rum-static.pingdom.net/prum.min.js';
+        s.parentNode.insertBefore(p, s);
+      })();
     </script>
     <link rel="stylesheet" type="text/css" href="vendor/chartist/chartist.min.css"/>
     <style>
@@ -139,23 +138,23 @@
 
 <script src="vendor/scrollReveal.js"></script>
 
-<div class="sale-banner" style="
-width: 100%;
-height: 60px;
-background: radial-gradient(black 15%, transparent 16%) 0 0,  radial-gradient(black 15%, transparent 16%) 8px 8px,  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-background-color:#282828;
-background-size:16px 16px;
-color: #fff;">
-    <div class="sale-banner-text" style="
-width: 100%;
-font-size: 20px;
-color: deepskyblue;
-line-height: 60px;
-margin: 0 auto;
-text-align: center;">Service Fee reduced to 9% from 12.5%. Boxing Day (12/26) ONLY!
-        </span>
-    </div>
-</div>
+<!--<div class="sale-banner" style="-->
+<!--width: 100%;-->
+<!--height: 60px;-->
+<!--background: radial-gradient(black 15%, transparent 16%) 0 0,  radial-gradient(black 15%, transparent 16%) 8px 8px,  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;-->
+<!--background-color:#282828;-->
+<!--background-size:16px 16px;-->
+<!--color: #fff;">-->
+<!--<div class="sale-banner-text" style="-->
+<!--width: 100%;-->
+<!--font-size: 20px;-->
+<!--color: deepskyblue;-->
+<!--line-height: 60px;-->
+<!--margin: 0 auto;-->
+<!--text-align: center;">Service Fee reduced to 9% from 12.5%. Boxing Day (12/26) ONLY!-->
+<!--</span>-->
+<!--</div>-->
+<!--</div>-->
 
 <div class="section background-green text-white">
     <div class="ui container">
@@ -751,178 +750,178 @@ text-align: center;">Service Fee reduced to 9% from 12.5%. Boxing Day (12/26) ON
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <script type="text/javascript">
-    var signin = document.getElementById('signin');
+  var signin = document.getElementById('signin');
 
-    analytics.trackLink(cta, 'Clicked Signin', {
-        location: 'heading',
-        text: 'SIGN IN',
-        CTA: 'Signin',
-        category: 'home page',
-        type: 'button',
-        pageTitle: document.title,
-        locale: 'en',
-        color: 'white outline',
+  analytics.trackLink(cta, 'Clicked Signin', {
+    location: 'heading',
+    text: 'SIGN IN',
+    CTA: 'Signin',
+    category: 'home page',
+    type: 'button',
+    pageTitle: document.title,
+    locale: 'en',
+    color: 'white outline',
 
-    });
+  });
 
-    var cta = document.getElementById('cta');
+  var cta = document.getElementById('cta');
 
-    analytics.trackLink(cta, 'Clicked BS CTA', {
-        location: 'heading',
-        text: 'GET STARTED',
-        CTA: 'Buying Service Signup',
-        category: 'home page',
-        type: 'button',
-        pageTitle: document.title,
-        locale: 'en',
-        color: 'yellow',
+  analytics.trackLink(cta, 'Clicked BS CTA', {
+    location: 'heading',
+    text: 'GET STARTED',
+    CTA: 'Buying Service Signup',
+    category: 'home page',
+    type: 'button',
+    pageTitle: document.title,
+    locale: 'en',
+    color: 'yellow',
 
-    });
+  });
 
-    var summersaleCTA = document.getElementById('summersale');
+  var summersaleCTA = document.getElementById('summersale');
 
-    analytics.trackLink(summersaleCTA, 'Clicked summersale CTA', {
-        location: 'heading',
-        text: 'Summer Sale',
-        CTA: 'Summer Sale 8%',
-        category: 'home page',
-        type: 'banner',
-        pageTitle: document.title,
-        locale: 'en',
-        color: 'red/yellow',
+  analytics.trackLink(summersaleCTA, 'Clicked summersale CTA', {
+    location: 'heading',
+    text: 'Summer Sale',
+    CTA: 'Summer Sale 8%',
+    category: 'home page',
+    type: 'banner',
+    pageTitle: document.title,
+    locale: 'en',
+    color: 'red/yellow',
 
-    });
+  });
 
 
-    var footerCTA = document.getElementById('get-started-foot');
+  var footerCTA = document.getElementById('get-started-foot');
 
-    analytics.trackLink(footerCTA, 'Clicked BS CTA', {
-        location: 'footer',
-        text: 'START NOW',
-        CTA: 'Buying Service Signup',
-        category: 'home page',
-        type: 'button',
-        pageTitle: document.title,
-        locale: 'en',
-        color: 'blue'
+  analytics.trackLink(footerCTA, 'Clicked BS CTA', {
+    location: 'footer',
+    text: 'START NOW',
+    CTA: 'Buying Service Signup',
+    category: 'home page',
+    type: 'button',
+    pageTitle: document.title,
+    locale: 'en',
+    color: 'blue'
 
-    });
+  });
 
-    var pfcta = document.getElementById('pf-cta');
+  var pfcta = document.getElementById('pf-cta');
 
-    analytics.trackLink(pfcta, 'Clicked PF CTA', {
-        location: 'heading',
-        text: 'GET AN ADDRESS IN JAPAN',
-        CTA: 'Package Forwarding Signup',
-        category: 'home page',
-        type: 'button',
-        pageTitle: document.title,
-        locale: 'en',
-        color: 'navy'
+  analytics.trackLink(pfcta, 'Clicked PF CTA', {
+    location: 'heading',
+    text: 'GET AN ADDRESS IN JAPAN',
+    CTA: 'Package Forwarding Signup',
+    category: 'home page',
+    type: 'button',
+    pageTitle: document.title,
+    locale: 'en',
+    color: 'navy'
 
-    });
+  });
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <!--<script src="dist/semantic.min.js"></script>-->
 <script src="dist/semantic.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.5.6/slick.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('#slider').slick({autoplay: true, arrows: false, dots: true});
-    });
+  $(document).ready(function () {
+    $('#slider').slick({autoplay: true, arrows: false, dots: true});
+  });
 </script>
 
 <script type="text/javascript">
-    (function performAutomaticLanguageCheck() {
-        var chinesePage = "/zh";
-        var availableLanguages = ['zh', 'en'];
+  (function performAutomaticLanguageCheck() {
+    var chinesePage = "/zh";
+    var availableLanguages = ['zh', 'en'];
 
-        function getLocale() {
-            var browserLanguagePropertyKeys = ['languages', 'language', 'browserLanguage', 'userLanguage', 'systemLanguage'];
+    function getLocale() {
+      var browserLanguagePropertyKeys = ['languages', 'language', 'browserLanguage', 'userLanguage', 'systemLanguage'];
 
-            var detectedLocale = _.chain(window.navigator)
-                    .pick(browserLanguagePropertyKeys) //Get only language properties
-                    .values() //Get values of the properties
-                    .flatten() //flatten all arrays
-                    .compact() //Remove undefined values
-                    .map(function (x) {
-                        return x.substr(0, 2); //Shorten strings to use two chars (en-US -> en)
-                    })
-                    .find(function (x) {
-                        return _.contains(availableLanguages, x); //Returns first language matched in available languages
-                    })
-                    .value();
+      var detectedLocale = _.chain(window.navigator)
+        .pick(browserLanguagePropertyKeys) //Get only language properties
+        .values() //Get values of the properties
+        .flatten() //flatten all arrays
+        .compact() //Remove undefined values
+        .map(function (x) {
+          return x.substr(0, 2); //Shorten strings to use two chars (en-US -> en)
+        })
+        .find(function (x) {
+          return _.contains(availableLanguages, x); //Returns first language matched in available languages
+        })
+        .value();
 
-            var locale = detectedLocale || 'en';
-            return locale;
+      var locale = detectedLocale || 'en';
+      return locale;
+    }
+
+    function getUrlParameter(param) {
+      var vars = {};
+      window.location.href.replace(
+        /[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+        function (m, key, value) { // callback
+          vars[key] = value !== undefined ? value : '';
         }
+      );
 
-        function getUrlParameter(param) {
-            var vars = {};
-            window.location.href.replace(
-                    /[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
-                    function (m, key, value) { // callback
-                        vars[key] = value !== undefined ? value : '';
-                    }
-            );
+      if (param) {
+        return vars[param] ? vars[param] : null;
+      }
+      return vars;
+    }
 
-            if (param) {
-                return vars[param] ? vars[param] : null;
-            }
-            return vars;
+    function automaticLanguageChange() {
+      var hasSelectedLanguage = !!getUrlParameter('lang');
+      if (!hasSelectedLanguage) {
+        if (getLocale() === 'zh') {
+          window.location.assign(chinesePage + '?lang=zh');
         }
+      }
+    }
 
-        function automaticLanguageChange() {
-            var hasSelectedLanguage = !!getUrlParameter('lang');
-            if (!hasSelectedLanguage) {
-                if (getLocale() === 'zh') {
-                    window.location.assign(chinesePage + '?lang=zh');
-                }
-            }
-        }
-
-        automaticLanguageChange();
-    })();
+    automaticLanguageChange();
+  })();
 </script>
 <script>
-    var config = {
+  var config = {
 
-        reset: false,
-        mobile: false,
-    };
+    reset: false,
+    mobile: false,
+  };
 
-    window.sr = new scrollReveal(config);
-    $(function () {
+  window.sr = new scrollReveal(config);
+  $(function () {
 //        $(".container").attr('data-sr', '');
 //        $(".sr-gallery-img").attr('data-sr', 'wait 0.2s, scale up 20%');
 
-        sr.init();
-    });
-
     sr.init();
+  });
+
+  sr.init();
 </script>
 <!-- counterup -->
 <script src="vendor/countUp.js"></script>
 <script src="vendor/jquery.waypoints.js"></script>
 <script src="vendor/inview.js"></script>
 <script>
-    var options = {
-        useEasing: true,
-        useGrouping: true,
-        separator: ',',
-        decimal: '.',
-        prefix: '',
-        suffix: ''
-    };
+  var options = {
+    useEasing: true,
+    useGrouping: true,
+    separator: ',',
+    decimal: '.',
+    prefix: '',
+    suffix: ''
+  };
 
-    var numAnim = new CountUp("customer-count", 0, 50000, 0, 2, options);
+  var numAnim = new CountUp("customer-count", 0, 50000, 0, 2, options);
 
-    var inview = new Waypoint.Inview({
-        element: $('.counter')[0],
-        enter: function (direction) {
-            numAnim.start();
-        },
-    })
+  var inview = new Waypoint.Inview({
+    element: $('.counter')[0],
+    enter: function (direction) {
+      numAnim.start();
+    },
+  })
 </script>
 
 </body>
