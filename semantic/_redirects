@@ -6,3 +6,6 @@
 
 # Rewrite a path
 /* http://cms.whiterabbitexpress.com/:splat 301
+
+# proxy to cms
+/cms/*  https://cms..whiterabbitexpress.com/:splat  200
